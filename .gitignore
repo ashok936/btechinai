@@ -1,0 +1,23 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby/Bundler
+.bundle/
+vendor/
+Gemfile.lock
+
+# OS Files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
