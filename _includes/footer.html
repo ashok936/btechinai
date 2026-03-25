@@ -1,0 +1,54 @@
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-sections">
+      <!-- About Section -->
+      <div class="footer-section">
+        <h3 class="footer-heading">{{ site.title | escape }}</h3>
+        <p class="footer-description">{{ site.description | escape }}</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4 class="footer-subheading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/semesters/year1-sem1">Year 1</a></li>
+          <li><a href="/semesters/year2-sem1">Year 2</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="footer-section">
+        <h4 class="footer-subheading">Resources</h4>
+        <ul class="footer-links">
+          <li><a href="#syllabus">Syllabus</a></li>
+          <li><a href="#papers">Question Papers</a></li>
+          <li><a href="#notes">Study Notes</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="footer-section">
+        <h4 class="footer-subheading">Contact</h4>
+        <ul class="footer-contact">
+          {%- if site.email -%}
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {%- endif -%}
+          <li>Nepal</li>
+          <li class="social-links">
+            {%- include social.html -%}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <p class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}. All rights reserved.</p>
+      <p class="footer-note">Dedicated to BTech in AI education in Nepal</p>
+    </div>
+  </div>
+</footer>
