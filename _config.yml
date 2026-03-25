@@ -4,7 +4,6 @@ description: >-
   Educational Site for students in AI.
 baseurl: ""
 url: "https://btechinai.com"
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
