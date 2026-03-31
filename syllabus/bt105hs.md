@@ -115,6 +115,6 @@ nav_exclude: true
 <div class="syllabus-section" id="old-questions">
   <h2>Old Questions</h2>
   <div class="old-questions-list">
-    <p>Past papers for this subject will be added soon.</p>
+    <a href="/syllabus/bt105hs/questions/2025/" class="year-card">2025 (Final)</a>
   </div>
 </div>
