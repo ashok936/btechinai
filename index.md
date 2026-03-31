@@ -19,7 +19,7 @@ layout: default
       <!-- Semester 1 -->
       <div id="sem1" class="semester-panel active">
         <div class="semester-header">
-          <h3>Semester I <span class="credits-badge">16 Total Credits</span></h3>
+          <h3>Semester I <span class="credits-badge">18 Total Credits</span></h3>
         </div>
         <div class="subject-list">
           <div class="subject-item">
@@ -35,51 +35,56 @@ layout: default
           </div>
           <div class="subject-item">
             <div class="subject-info">
-              <h4>Digital Logic</h4>
+              <h4><a href="{{ "/syllabus/bt102co/" | relative_url }}">Digital Logic</a></h4>
               <span class="subject-credits">3 Credits</span>
             </div>
+            <p class="subject-desc">Foundational principles of digital system design, Boolean algebra, logic gates, and sequential circuits.</p>
             <div class="subject-links">
-              <a href="#">Syllabus</a>
+              <a href="{{ "/syllabus/bt102co/" | relative_url }}">Syllabus</a>
               <a href="#">Old Questions</a>
             </div>
           </div>
           <div class="subject-item">
             <div class="subject-info">
-              <h4>Calculus</h4>
+              <h4><a href="{{ "/syllabus/bt103hs/" | relative_url }}">Calculus</a></h4>
               <span class="subject-credits">3 Credits</span>
             </div>
+            <p class="subject-desc">Comprehensive study of differential and integral calculus with applications in engineering.</p>
             <div class="subject-links">
-              <a href="#">Syllabus</a>
+              <a href="{{ "/syllabus/bt103hs/" | relative_url }}">Syllabus</a>
               <a href="#">Old Questions</a>
             </div>
           </div>
           <div class="subject-item">
             <div class="subject-info">
-              <h4>Introduction to Artificial Intelligence</h4>
+              <h4><a href="{{ "/syllabus/bt104co/" | relative_url }}">Introduction to Artificial Intelligence</a></h4>
               <span class="subject-credits">3 Credits</span>
             </div>
+            <p class="subject-desc">Conceptual understanding of AI systems, agents, search strategies, and knowledge representation.</p>
             <div class="subject-links">
-              <a href="#">Syllabus</a>
+              <a href="{{ "/syllabus/bt104co/" | relative_url }}">Syllabus</a>
               <a href="#">Old Questions</a>
             </div>
           </div>
           <div class="subject-item">
             <div class="subject-info">
-              <h4>Technical Report Writing & Presentation</h4>
-              <span class="subject-credits">2 Credits</span>
+              <h4><a href="{{ "/syllabus/bt105hs/" | relative_url }}">Technical Report Writing & Presentation</a></h4>
+              <span class="subject-credits">3 Credits</span>
             </div>
+            <p class="subject-desc">Developing linguistic competence, English language skills for technical communication, and effective presentation techniques.</p>
             <div class="subject-links">
-              <a href="#">Syllabus</a>
+              <a href="{{ "/syllabus/bt105hs/" | relative_url }}">Syllabus</a>
               <a href="#">Old Questions</a>
             </div>
           </div>
           <div class="subject-item">
             <div class="subject-info">
-              <h4>Society & Professional Ethics</h4>
-              <span class="subject-credits">2 Credits</span>
+              <h4><a href="{{ "/syllabus/bt106hs/" | relative_url }}">Sociology and Professional Ethics</a></h4>
+              <span class="subject-credits">3 Credits</span>
             </div>
+            <p class="subject-desc">Exploration of social dynamics, cultural change, ethical issues in IT, and emotional intelligence.</p>
             <div class="subject-links">
-              <a href="#">Syllabus</a>
+              <a href="{{ "/syllabus/bt106hs/" | relative_url }}">Syllabus</a>
               <a href="#">Old Questions</a>
             </div>
           </div>
