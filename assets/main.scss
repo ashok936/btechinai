@@ -353,3 +353,113 @@ a {
     font-weight: 700;
   }
 }
+
+// Question Paper Styles
+.question-paper {
+  background-color: #fff;
+  padding: 40px;
+  border: 1px solid var(--border-color);
+  font-family: 'Inter', serif;
+  line-height: 1.6;
+  margin-top: 30px;
+  color: #000;
+
+  .paper-header {
+    text-align: center;
+    margin-bottom: 30px;
+    p {
+      margin: 4px 0;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .marks-info {
+       display: flex;
+       justify-content: space-between;
+       margin-top: 10px;
+       font-weight: 700;
+    }
+  }
+
+  .group {
+    margin-top: 30px;
+    h3 {
+      text-align: center;
+      text-decoration: underline;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    .group-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        font-weight: 700;
+        border-bottom: 1px solid #000;
+        padding-bottom: 5px;
+    }
+  }
+
+  .question {
+    margin-bottom: 20px;
+    position: relative;
+    p {
+      margin: 10px 0;
+    }
+    .marks {
+      float: right;
+      font-weight: 700;
+      margin-left: 10px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 25px;
+      li {
+        margin-bottom: 8px;
+        position: relative;
+      }
+    }
+  }
+
+  hr {
+    border: none;
+    border-top: 2px solid #000;
+    margin: 30px 0;
+  }
+
+  em {
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+
+  .mermaid {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    overflow: hidden;
+  }
+}
+
+// Old Questions Section in Syllabus
+.old-questions-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+  
+  .year-card {
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 700;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    
+    &:hover {
+      background: var(--text-main);
+      color: #fff;
+    }
+  }
+}

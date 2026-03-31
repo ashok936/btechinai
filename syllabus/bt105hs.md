@@ -111,3 +111,10 @@ nav_exclude: true
     <li>Oxford Advanced Learner's Dictionary of Current English, New Edition, Oxford.</li>
   </ol>
 </div>
+
+<div class="syllabus-section" id="old-questions">
+  <h2>Old Questions</h2>
+  <div class="old-questions-list">
+    <p>Past papers for this subject will be added soon.</p>
+  </div>
+</div>

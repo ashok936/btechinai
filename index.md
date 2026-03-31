@@ -30,7 +30,7 @@ layout: default
             <p class="subject-desc">Fundamental programming concepts and problem-solving techniques using modern programming languages.</p>
             <div class="subject-links">
               <a href="{{ "/syllabus/bt101co/" | relative_url }}">Syllabus</a>
-              <a href="#">Old Questions</a>
+              <a href="{{ "/syllabus/bt101co/#old-questions" | relative_url }}">Old Questions</a>
             </div>
           </div>
           <div class="subject-item">
@@ -41,7 +41,7 @@ layout: default
             <p class="subject-desc">Foundational principles of digital system design, Boolean algebra, logic gates, and sequential circuits.</p>
             <div class="subject-links">
               <a href="{{ "/syllabus/bt102co/" | relative_url }}">Syllabus</a>
-              <a href="#">Old Questions</a>
+              <a href="{{ "/syllabus/bt102co/#old-questions" | relative_url }}">Old Questions</a>
             </div>
           </div>
           <div class="subject-item">
@@ -52,7 +52,7 @@ layout: default
             <p class="subject-desc">Comprehensive study of differential and integral calculus with applications in engineering.</p>
             <div class="subject-links">
               <a href="{{ "/syllabus/bt103hs/" | relative_url }}">Syllabus</a>
-              <a href="#">Old Questions</a>
+              <a href="{{ "/syllabus/bt103hs/#old-questions" | relative_url }}">Old Questions</a>
             </div>
           </div>
           <div class="subject-item">
@@ -63,7 +63,7 @@ layout: default
             <p class="subject-desc">Conceptual understanding of AI systems, agents, search strategies, and knowledge representation.</p>
             <div class="subject-links">
               <a href="{{ "/syllabus/bt104co/" | relative_url }}">Syllabus</a>
-              <a href="#">Old Questions</a>
+              <a href="{{ "/syllabus/bt104co/#old-questions" | relative_url }}">Old Questions</a>
             </div>
           </div>
           <div class="subject-item">
@@ -74,7 +74,7 @@ layout: default
             <p class="subject-desc">Developing linguistic competence, English language skills for technical communication, and effective presentation techniques.</p>
             <div class="subject-links">
               <a href="{{ "/syllabus/bt105hs/" | relative_url }}">Syllabus</a>
-              <a href="#">Old Questions</a>
+              <a href="{{ "/syllabus/bt105hs/#old-questions" | relative_url }}">Old Questions</a>
             </div>
           </div>
           <div class="subject-item">
@@ -85,7 +85,7 @@ layout: default
             <p class="subject-desc">Exploration of social dynamics, cultural change, ethical issues in IT, and emotional intelligence.</p>
             <div class="subject-links">
               <a href="{{ "/syllabus/bt106hs/" | relative_url }}">Syllabus</a>
-              <a href="#">Old Questions</a>
+              <a href="{{ "/syllabus/bt106hs/#old-questions" | relative_url }}">Old Questions</a>
             </div>
           </div>
         </div>

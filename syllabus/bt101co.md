@@ -160,3 +160,10 @@ nav_exclude: true
     <li>Ashok Namdev Kamthane, Amit Ashok Kamthane, “Programming and Problem Solving with Python”, McGraw Hill Education</li>
   </ol>
 </div>
+
+<div class="syllabus-section" id="old-questions">
+  <h2>Old Questions</h2>
+  <div class="old-questions-list">
+    <a href="/syllabus/bt101co/questions/2025/" class="year-card">2025 (Final)</a>
+  </div>
+</div>

@@ -152,3 +152,10 @@ nav_exclude: true
     <li>D. D. Hodegs & H.G. Jackson, “Analysis & Design of Digital Integrated Circuits”, McGraw Hill, New York, 1983</li>
   </ol>
 </div>
+
+<div class="syllabus-section" id="old-questions">
+  <h2>Old Questions</h2>
+  <div class="old-questions-list">
+    <a href="/syllabus/bt102co/questions/2025/" class="year-card">2025 (Final)</a>
+  </div>
+</div>

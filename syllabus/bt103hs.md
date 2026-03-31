@@ -100,3 +100,10 @@ nav_exclude: true
     <li>M.B.Singh and B.C. Bajracharya, "DIFFERENTIAL CALCULAS", (Sukunda Pustak Bhawan, Kathmandu).</li>
   </ol>
 </div>
+
+<div class="syllabus-section" id="old-questions">
+  <h2>Old Questions</h2>
+  <div class="old-questions-list">
+    <a href="/syllabus/bt103hs/questions/2025/" class="year-card">2025 (Final)</a>
+  </div>
+</div>

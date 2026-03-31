@@ -145,3 +145,10 @@ nav_exclude: true
     <li>D. Crookes, "Introduction to Programming in Prolog", Prentice Hall</li>
   </ol>
 </div>
+
+<div class="syllabus-section" id="old-questions">
+  <h2>Old Questions</h2>
+  <div class="old-questions-list">
+    <a href="/syllabus/bt104co/questions/2025/" class="year-card">2025 (Final)</a>
+  </div>
+</div>
