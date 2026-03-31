@@ -1,0 +1,520 @@
+{
+  "title": "Unit 1: Introduction to Artificial Intelligence",
+  "questions": [
+    {
+      "type": "simple",
+      "text": "Who is considered the father of AI and coined the term in 1956?",
+      "options": ["Alan Turing", "John McCarthy", "Marvin Minsky", "Herbert Simon"],
+      "correct_option": 1,
+      "hint": "He organized the Dartmouth Workshop.",
+      "reasoning": "John McCarthy coined the term 'Artificial Intelligence' at the Dartmouth Conference in 1956."
+    },
+    {
+      "type": "simple",
+      "text": "What does the Turing Test measure?",
+      "options": [
+        "A machine's ability to think rationally",
+        "A machine's ability to behave indistinguishably from a human",
+        "The processing speed of a computer",
+        "The storage capacity of a neural network"
+      ],
+      "correct_option": 1,
+      "hint": "It focuses on 'Acting Humanly'.",
+      "reasoning": "The Turing Test is a benchmark for 'Acting Humanly' where a machine must fool an interrogator into thinking it is human."
+    },
+    {
+      "type": "simple",
+      "text": "In the PEAS framework, what does 'S' stand for?",
+      "options": ["Software", "Success", "Sensors", "Stability"],
+      "correct_option": 2,
+      "hint": "It is how the agent perceives the world.",
+      "reasoning": "PEAS stands for Performance, Environment, Actuators, and Sensors."
+    },
+    {
+      "type": "simple",
+      "text": "Which approach to AI focuses on 'Laws of Thought'?",
+      "options": ["Acting Humanly", "Thinking Humanly", "Thinking Rationally", "Acting Rationally"],
+      "correct_option": 2,
+      "hint": "It uses logic and syllogisms.",
+      "reasoning": "Thinking Rationally uses formal logic to represent and solve problems correctly."
+    },
+    {
+      "type": "simple",
+      "text": "Which agent type is the most basic and uses 'if-then' rules?",
+      "options": ["Simple Reflex Agent", "Model-based Agent", "Goal-based Agent", "Utility-based Agent"],
+      "correct_option": 0,
+      "hint": "It ignores percept history.",
+      "reasoning": "Simple Reflex Agents act only on the current percept based on condition-action rules."
+    },
+    {
+      "type": "simple",
+      "text": "What is an 'Agent' in AI?",
+      "options": [
+        "A human supervisor",
+        "Anything that perceives its environment and acts upon it",
+        "A specific type of computer virus",
+        "The physical chassis of a robot"
+      ],
+      "correct_option": 1,
+      "hint": "It involves sensors and actuators.",
+      "reasoning": "An agent is anything that can be viewed as perceiving its environment through sensors and acting upon that environment through actuators."
+    },
+    {
+      "type": "simple",
+      "text": "An environment where the next state is completely determined by the current state and action is:",
+      "options": ["Stochastic", "Deterministic", "Dynamic", "Continuous"],
+      "correct_option": 1,
+      "hint": "There is no randomness involved.",
+      "reasoning": "In a deterministic environment, there is no uncertainty about the outcome of an action."
+    },
+    {
+      "type": "simple",
+      "text": "Which field of AI deals with machines understanding human language?",
+      "options": ["Computer Vision", "Robotics", "Natural Language Processing", "Expert Systems"],
+      "correct_option": 2,
+      "hint": "Commonly known as NLP.",
+      "reasoning": "Natural Language Processing (NLP) allows machines to read, understand, and derive meaning from human languages."
+    },
+    {
+      "type": "simple",
+      "text": "What is a 'Rational Agent'?",
+      "options": [
+        "An agent that thinks like a human",
+        "An agent that acts to maximize its expected performance measure",
+        "An agent that is always 100% correct",
+        "An agent that has a biological brain"
+      ],
+      "correct_option": 1,
+      "hint": "It aims for the best possible outcome.",
+      "reasoning": "Rationality is about acting to achieve the best outcome or the best expected outcome under uncertainty."
+    },
+    {
+      "type": "simple",
+      "text": "If an environment can change while the agent is deliberating, it is:",
+      "options": ["Static", "Dynamic", "Semidynamic", "Discrete"],
+      "correct_option": 1,
+      "hint": "Think of a taxi driver vs. a crossword puzzle.",
+      "reasoning": "A dynamic environment changes independently of the agent's actions while the agent is thinking."
+    },
+    {
+      "type": "simple",
+      "text": "Which era of AI history is known for 'Expert Systems'?",
+      "options": ["1950s", "1980s", "2010s", "1940s"],
+      "correct_option": 1,
+      "hint": "The first commercial boom of AI.",
+      "reasoning": "The 1980s saw the rise of knowledge-based 'Expert Systems' in corporations."
+    },
+    {
+      "type": "simple",
+      "text": "The 8-puzzle game environment is:",
+      "options": ["Continuous", "Discrete", "Stochastic", "Partially Observable"],
+      "correct_option": 1,
+      "hint": "The states are distinct and countable.",
+      "reasoning": "Board games like the 8-puzzle have a finite, distinct set of states and actions, making them discrete."
+    },
+    {
+      "type": "simple",
+      "text": "Which component of an agent performs the actions?",
+      "options": ["Sensors", "Actuators", "Learning Element", "Performance Measure"],
+      "correct_option": 1,
+      "hint": "Wheels, speakers, or robotic arms.",
+      "reasoning": "Actuators are the components responsible for moving or controlling a mechanism or system."
+    },
+    {
+      "type": "simple",
+      "text": "What is the 'Initial State' in problem solving?",
+      "options": ["The goal", "The starting point", "The path cost", "The heuristic"],
+      "correct_option": 1,
+      "hint": "Where the agent begins.",
+      "reasoning": "The initial state is the configuration from which the agent starts the search for a solution."
+    },
+    {
+      "type": "simple",
+      "text": "Which field provided AI with the concept of 'Utility'?",
+      "options": ["Mathematics", "Economics", "Philosophy", "Neuroscience"],
+      "correct_option": 1,
+      "hint": "Think about maximizing profit or satisfaction.",
+      "reasoning": "Economics contributed decision theory and the concept of maximizing utility."
+    },
+    {
+      "type": "simple",
+      "text": "What describes an environment where the agent's sensors give it access to the complete state?",
+      "options": ["Partially Observable", "Fully Observable", "Sequential", "Episodic"],
+      "correct_option": 1,
+      "hint": "Like Chess, unlike Poker.",
+      "reasoning": "In a fully observable environment, the agent can see everything relevant to its decision at any time."
+    },
+    {
+      "type": "simple",
+      "text": "A 'Goal-based Agent' is more proactive than a 'Reflex Agent' because:",
+      "options": [
+        "It uses a camera",
+        "It considers future consequences to reach a target",
+        "It is faster",
+        "It doesn't need sensors"
+      ],
+      "correct_option": 1,
+      "hint": "It has a destination in mind.",
+      "reasoning": "Goal-based agents use goal information to describe situations that are desirable."
+    },
+    {
+      "type": "simple",
+      "text": "What is a 'Percept' in AI?",
+      "options": [
+        "An action taken by the agent",
+        "The agent's perceptual inputs at a given instant",
+        "The final goal of the system",
+        "A type of neural network layer"
+      ],
+      "correct_option": 1,
+      "hint": "What the agent 'sees' right now.",
+      "reasoning": "A percept is the sensory input an agent receives at any specific moment."
+    },
+    {
+      "type": "simple",
+      "text": "Which AI pioneer proposed the 'Imitation Game'?",
+      "options": ["John von Neumann", "Alan Turing", "Claude Shannon", "Elon Musk"],
+      "correct_option": 1,
+      "hint": "He cracked the Enigma code.",
+      "reasoning": "Alan Turing proposed the Imitation Game, now known as the Turing Test."
+    },
+    {
+      "type": "simple",
+      "text": "Chess is an example of which kind of environment?",
+      "options": ["Single-agent", "Multiagent", "Stochastic", "Dynamic"],
+      "correct_option": 1,
+      "hint": "There is an opponent.",
+      "reasoning": "Chess involves two players competing, making it a multiagent environment."
+    },
+    {
+      "type": "simple",
+      "text": "What is the primary goal of a Learning Agent?",
+      "options": [
+        "To stay in the same state",
+        "To improve its performance over time",
+        "To consume less electricity",
+        "To follow human orders only"
+      ],
+      "correct_option": 1,
+      "hint": "It adapts from experience.",
+      "reasoning": "A learning agent uses its experiences to improve its future performance."
+    },
+    {
+      "type": "simple",
+      "text": "A thermostat is an example of which agent type?",
+      "options": ["Simple Reflex Agent", "Learning Agent", "Goal-based Agent", "Utility-based Agent"],
+      "correct_option": 0,
+      "hint": "If temp < 20, turn on heater.",
+      "reasoning": "It acts purely based on the current temperature reading using a fixed rule."
+    },
+    {
+      "type": "simple",
+      "text": "The study of the brain's physical structure to inspire AI is called:",
+      "options": ["Psychology", "Neuroscience", "Linguistics", "Control Theory"],
+      "correct_option": 1,
+      "hint": "Study of neurons.",
+      "reasoning": "Neuroscience provided the biological inspiration for artificial neural networks."
+    },
+    {
+      "type": "simple",
+      "text": "Which environment property applies to a crossword puzzle?",
+      "options": ["Sequential", "Episodic", "Dynamic", "Stochastic"],
+      "correct_option": 0,
+      "hint": "Current word choice affects future choices.",
+      "reasoning": "Crossword puzzles are sequential because the words you choose now affect which words can fit later."
+    },
+    {
+      "type": "simple",
+      "text": "What is 'Artificial General Intelligence' (AGI)?",
+      "options": [
+        "AI for playing Chess",
+        "AI that can perform any intellectual task a human can",
+        "AI used only in medicine",
+        "AI that doesn't use data"
+      ],
+      "correct_option": 1,
+      "hint": "Broad, human-level intelligence.",
+      "reasoning": "AGI refers to a machine that can solve problems across many different domains like a human."
+    },
+    {
+      "type": "simple",
+      "text": "In problem solving, the 'Path Cost' is:",
+      "options": [
+        "The cost of the hardware",
+        "A numeric value assigned to a sequence of actions",
+        "The time taken to write the code",
+        "The number of sensors used"
+      ],
+      "correct_option": 1,
+      "hint": "Total distance or effort.",
+      "reasoning": "Path cost is the sum of the costs of individual actions along a path from start to goal."
+    },
+    {
+      "type": "simple",
+      "text": "Which of these is a 'Stochastic' environment?",
+      "options": ["Sudoku", "Poker", "Chess", "8-puzzle"],
+      "correct_option": 1,
+      "hint": "Involves luck or randomness.",
+      "reasoning": "Poker involves a shuffled deck (randomness), making it stochastic."
+    },
+    {
+      "type": "simple",
+      "text": "What does a 'Utility Function' measure?",
+      "options": ["Speed", "Degree of 'happiness' or success", "Memory usage", "Sensor accuracy"],
+      "correct_option": 1,
+      "hint": "It ranks how good a state is.",
+      "reasoning": "A utility function maps a state onto a real number that describes how 'good' that state is for the agent."
+    },
+    {
+      "type": "simple",
+      "text": "Which approach to AI is the Turing Test associated with?",
+      "options": ["Thinking Humanly", "Acting Humanly", "Thinking Rationally", "Acting Rationally"],
+      "correct_option": 1,
+      "hint": "Behaving like a person.",
+      "reasoning": "The Turing Test was the first operational definition of 'Acting Humanly'."
+    },
+    {
+      "type": "simple",
+      "text": "The first neural model was proposed in 1943 by:",
+      "options": [
+        "McCarthy and Minsky",
+        "McCulloch and Pitts",
+        "Newell and Simon",
+        "Turing and von Neumann"
+      ],
+      "correct_option": 1,
+      "hint": "Biological neuron pioneers.",
+      "reasoning": "Warren McCulloch and Walter Pitts proposed the first model of artificial neurons."
+    },
+    {
+      "type": "medium",
+      "text": "What is the difference between 'Rationality' and 'Omniscience'?",
+      "options": [
+        "They are the same thing",
+        "Rationality is doing the best with available info; Omniscience is knowing the actual outcome",
+        "Rationality is for humans; Omniscience is for machines",
+        "Omniscience is a subset of Rationality"
+      ],
+      "correct_option": 1,
+      "hint": "One knows the future; one makes a smart guess.",
+      "reasoning": "A rational agent makes the best choice based on percepts; it cannot be blamed for not knowing what was unperceivable."
+    },
+    {
+      "type": "medium",
+      "text": "Why is a 'Model-based' agent necessary for partially observable environments?",
+      "options": [
+        "To run faster",
+        "To keep track of the parts of the world it can't see right now",
+        "To communicate with other agents",
+        "To reduce energy consumption"
+      ],
+      "correct_option": 1,
+      "hint": "It 'remembers' the past.",
+      "reasoning": "A model-based agent maintains an internal state that tracks unobserved aspects of the environment."
+    },
+    {
+      "type": "medium",
+      "text": "In the PEAS description of an Automated Taxi, which is an 'Actuator'?",
+      "options": ["Camera", "LIDAR", "Steering wheel", "Roads"],
+      "correct_option": 2,
+      "hint": "What the car uses to move.",
+      "reasoning": "Steering, accelerators, and brakes are actuators; cameras and LIDAR are sensors."
+    },
+    {
+      "type": "medium",
+      "text": "What is the 'Combinatorial Explosion' problem in AI?",
+      "options": [
+        "Hardware getting too hot",
+        "The number of states growing too fast to search",
+        "Multiple agents fighting each other",
+        "Data getting deleted by mistake"
+      ],
+      "correct_option": 1,
+      "hint": "Too many possibilities.",
+      "reasoning": "In many problems, the state space grows exponentially, making simple search impossible."
+    },
+    {
+      "type": "medium",
+      "text": "A 'Semidynamic' environment is one where:",
+      "options": [
+        "The world changes but the agent's score doesn't",
+        "The environment doesn't change, but the agent's performance score does over time",
+        "The agent is half-human",
+        "The agent can only see half the world"
+      ],
+      "correct_option": 1,
+      "hint": "Think of a timed board game.",
+      "reasoning": "In semidynamic environments, the world stays still, but time ticking down affects the performance score."
+    },
+    {
+      "type": "medium",
+      "text": "Which component of the Learning Agent architecture is responsible for making improvements?",
+      "options": ["Performance Element", "Learning Element", "Critic", "Problem Generator"],
+      "correct_option": 1,
+      "hint": "The name is a giveaway.",
+      "reasoning": "The Learning Element takes feedback and modifies the Performance Element to do better."
+    },
+    {
+      "type": "medium",
+      "text": "The 'Cognitive Modeling' approach to AI belongs to which quadrant?",
+      "options": ["Acting Humanly", "Thinking Humanly", "Thinking Rationally", "Acting Rationally"],
+      "correct_option": 1,
+      "hint": "Understanding the human mind.",
+      "reasoning": "Thinking Humanly focuses on matching the internal thought processes of human beings."
+    },
+    {
+      "type": "medium",
+      "text": "What describes a 'Task Environment'?",
+      "options": [
+        "The computer's operating system",
+        "The combination of PEAS elements",
+        "The office where the AI is built",
+        "The list of programming bugs"
+      ],
+      "correct_option": 1,
+      "hint": "Performance, Environment, Actuators, Sensors.",
+      "reasoning": "The task environment is essentially the 'problem' the agent is designed to solve, defined by PEAS."
+    },
+    {
+      "type": "medium",
+      "text": "In a 'Sequential' environment, the current decision:",
+      "options": [
+        "Has no effect on the future",
+        "Can affect all future decisions",
+        "Only matters if the agent wins",
+        "Is always random"
+      ],
+      "correct_option": 1,
+      "hint": "Short-term vs. Long-term.",
+      "reasoning": "In sequential environments, current actions have long-term consequences."
+    },
+    {
+      "type": "medium",
+      "text": "Which field contributed 'Syllogisms' and formal reasoning to AI?",
+      "options": ["Philosophy", "Mathematics", "Economics", "Linguistics"],
+      "correct_option": 0,
+      "hint": "Aristotle's logic.",
+      "reasoning": "Philosophy (starting with Aristotle) provided the first formal rules for 'Thinking Rationally'."
+    },
+    {
+      "type": "hard",
+      "text": "How does 'Bounded Rationality' differ from pure 'Rationality'?",
+      "options": [
+        "Bounded rationality is for small problems",
+        "Bounded rationality accounts for limited computational resources",
+        "Pure rationality doesn't use sensors",
+        "There is no difference"
+      ],
+      "correct_option": 1,
+      "hint": "Perfect logic vs. Real computers.",
+      "reasoning": "Bounded rationality is the idea that in decision-making, rationality is limited by the information they have, the cognitive limitations of their minds, and the finite amount of time."
+    },
+    {
+      "type": "hard",
+      "text": "Which agent architecture is required to solve the 'Alignment Problem'?",
+      "options": ["Simple Reflex", "Utility-based", "Model-based", "Goal-based"],
+      "correct_option": 1,
+      "hint": "Think about values and trade-offs.",
+      "reasoning": "Utility-based agents are central to alignment because they use complex functions to weigh different goals and values."
+    },
+    {
+      "type": "hard",
+      "text": "In the context of the Turing Test, what is 'Automated Reasoning' used for?",
+      "options": [
+        "Translating text to audio",
+        "Using stored information to answer questions and draw conclusions",
+        "Generating random responses",
+        "Moving robotic limbs"
+      ],
+      "correct_option": 1,
+      "hint": "Thinking logically about what was stored.",
+      "reasoning": "Automated reasoning allows the machine to use its knowledge base to respond to the interrogator's logic."
+    },
+    {
+      "type": "hard",
+      "text": "What is the role of the 'Problem Generator' in a learning agent?",
+      "options": [
+        "To find errors in the code",
+        "To suggest actions that will lead to new, informative experiences",
+        "To stop the agent from working",
+        "To generate math problems for the user"
+      ],
+      "correct_option": 1,
+      "hint": "Exploration vs. Exploitation.",
+      "reasoning": "The problem generator forces the agent to explore the environment to learn more, even if it's not the most 'rational' move in the short term."
+    },
+    {
+      "type": "hard",
+      "text": "Which environment property is the most difficult to handle for an agent?",
+      "options": [
+        "Fully Observable",
+        "Partially Observable",
+        "Deterministic",
+        "Discrete"
+      ],
+      "correct_option": 1,
+      "hint": "Hidden information.",
+      "reasoning": "Partially observable environments require the agent to maintain an internal state to guess what it cannot see, which is significantly harder than having all data available."
+    },
+    {
+      "type": "hard",
+      "text": "The 'Laws of Thought' approach is often criticized because:",
+      "options": [
+        "It is too fast",
+        "It is difficult to represent informal knowledge in formal logic",
+        "It doesn't use math",
+        "It is only for robots"
+      ],
+      "correct_option": 1,
+      "hint": "Real world vs. Syllogisms.",
+      "reasoning": "Turning real-world 'fuzzy' knowledge into exact logical statements ($A \\implies B$) is extremely difficult and often fails."
+    },
+    {
+      "type": "hard",
+      "text": "Which foundational field gave us 'Game Theory'?",
+      "options": ["Mathematics", "Economics", "Philosophy", "Psychology"],
+      "correct_option": 1,
+      "hint": "Competing rational agents.",
+      "reasoning": "Economics developed Game Theory to understand how rational agents behave in competitive scenarios."
+    },
+    {
+      "type": "hard",
+      "text": "The 'Total Turing Test' adds which two requirements?",
+      "options": [
+        "Speech and Hearing",
+        "Computer Vision and Robotics",
+        "Internet access and GPS",
+        "Emotions and Consciousness"
+      ],
+      "correct_option": 1,
+      "hint": "Physical interaction.",
+      "reasoning": "The 'Total' version requires the agent to perceive objects (Vision) and manipulate them (Robotics)."
+    },
+    {
+      "type": "hard",
+      "text": "What is the main limitation of a 'Simple Reflex Agent' in a taxi driving task?",
+      "options": [
+        "It would go too fast",
+        "It cannot see around corners or handle unobserved traffic",
+        "It doesn't have a map",
+        "It would run out of fuel"
+      ],
+      "correct_option": 1,
+      "hint": "Lack of internal state.",
+      "reasoning": "Without a 'model' or memory, a reflex agent can only react to what is currently in its cameras, making it dangerous in traffic."
+    },
+    {
+      "type": "hard",
+      "text": "Which dimension of the environment applies to medical diagnosis?",
+      "options": [
+        "Fully Observable",
+        "Partially Observable",
+        "Deterministic",
+        "Single-agent"
+      ],
+      "correct_option": 1,
+      "hint": "Can you see inside the patient perfectly?",
+      "reasoning": "Medical diagnosis is partially observable because symptoms don't always reveal the exact internal state of the patient without further testing."
+    }
+  ]
+}

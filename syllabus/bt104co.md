@@ -27,6 +27,7 @@ nav_exclude: true
       <li><a href="/syllabus/bt104co/goals-challenges-ai/">1.4 Goals and Challenges of AI</a></li>
       <li><a href="/syllabus/bt104co/applications-of-ai/">1.5 Applications of AI</a></li>
     </ul>
+    {% include quiz-button.html quiz_id="unit1_ai" %}
   </div>
 
   <div class="unit">
