@@ -3,6 +3,11 @@ layout: default
 ---
 
 <div class="wrapper">
+  <header class="hero">
+    <h1>Btech in AI <span class="highlight">Curriculum</span></h1>
+    <p>A comprehensive academic portal for Artificial Intelligence students at BtechInAI. Access syllabi, resources, and past examination materials.</p>
+  </header>
+
   <div class="curriculum-container">
     <div class="semester-tabs">
       <button class="tab-btn active" onclick="openSemester(event, 'sem1')">1st Sem</button>
