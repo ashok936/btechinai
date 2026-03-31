@@ -5,6 +5,10 @@ course_code: BT101CO
 permalink: /syllabus/bt101co/history-of-python/
 ---
 
+<div class="top-navigation">
+  <a href="/syllabus/bt101co/installing-python/" class="next-btn">Next: 1.3 Downloading and Installing Python →</a>
+</div>
+
 <div class="syllabus-header">
   <h1>{{ page.title }} <small>({{ page.course_code }})</small></h1>
 </div>

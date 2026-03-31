@@ -5,6 +5,10 @@ course_code: BT101CO
 permalink: /syllabus/bt101co/what-is-python/
 ---
 
+<div class="top-navigation">
+  <a href="/syllabus/bt101co/history-of-python/" class="next-btn">Next: 1.2 History of Python →</a>
+</div>
+
 <div class="syllabus-header">
   <h1>{{ page.title }} <small>({{ page.course_code }})</small></h1>
 </div>
