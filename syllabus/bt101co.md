@@ -2,6 +2,7 @@
 layout: default
 title: Introduction to Programming
 course_code: BT101CO
+permalink: /syllabus/bt101co/
 nav_exclude: true
 ---
 
