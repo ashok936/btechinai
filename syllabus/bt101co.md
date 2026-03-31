@@ -2,6 +2,7 @@
 layout: default
 title: Introduction to Programming
 course_code: BT101CO
+nav_exclude: true
 ---
 
 <div class="syllabus-header">

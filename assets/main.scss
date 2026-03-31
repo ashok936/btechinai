@@ -42,16 +42,7 @@ body {
 }
 
 .site-nav {
-  .page-link {
-    color: var(--text-main) !important;
-    font-weight: 500;
-    text-transform: lowercase;
-    letter-spacing: 0.5px;
-    &:hover {
-      color: var(--secondary) !important;
-      text-decoration: underline;
-    }
-  }
+  display: none; // Hide navigation for a cleaner look
 }
 
 .wrapper {

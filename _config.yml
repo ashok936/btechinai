@@ -10,6 +10,5 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Exclude syllabus from header navigation
-header_pages:
-  - index.md
+# Exclude all pages from header navigation
+header_pages: []
