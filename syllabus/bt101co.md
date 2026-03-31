@@ -33,14 +33,14 @@ nav_exclude: true
   <div class="unit">
     <h3>Unit 2: Data Types, Input/ Output <span class="unit-hours">[5 Hrs]</span></h3>
     <ul>
-      <li>2.1 Python Character Set</li>
-      <li>2.2 Python Core Data Types</li>
-      <li>2.3 Tokens</li>
-      <li>2.4 Variables</li>
-      <li>2.5 Assignment of values to variables</li>
-      <li>2.6 The input() function</li>
-      <li>2.7 print() function</li>
-      <li>2.8 The eval() function</li>
+      <li><a href="/syllabus/bt101co/character-set/">2.1 Python Character Set</a></li>
+      <li><a href="/syllabus/bt101co/core-data-types/">2.2 Python Core Data Types</a></li>
+      <li><a href="/syllabus/bt101co/tokens/">2.3 Tokens</a></li>
+      <li><a href="/syllabus/bt101co/variables/">2.4 Variables</a></li>
+      <li><a href="/syllabus/bt101co/assignment-of-values/">2.5 Assignment of values to variables</a></li>
+      <li><a href="/syllabus/bt101co/input-function/">2.6 The input() function</a></li>
+      <li><a href="/syllabus/bt101co/print-function/">2.7 print() function</a></li>
+      <li><a href="/syllabus/bt101co/eval-function/">2.8 The eval() function</a></li>
     </ul>
   </div>
 

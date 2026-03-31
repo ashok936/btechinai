@@ -97,7 +97,7 @@ permalink: /syllabus/bt101co/comparing-python/
       <a href="/syllabus/bt101co/documentation/">← Previous: 1.5 Python Documentation</a>
     </div>
     <div class="next-topic">
-       <!-- End of Unit 1 Topics -->
+       <a href="/syllabus/bt101co/character-set/">Next: 2.1 Character Set →</a>
     </div>
   </div>
   <div style="text-align: center; margin-top: 30px;">
