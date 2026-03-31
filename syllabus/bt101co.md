@@ -43,6 +43,7 @@ nav_exclude: true
       <li><a href="/syllabus/bt101co/print-function/">2.7 print() function</a></li>
       <li><a href="/syllabus/bt101co/eval-function/">2.8 The eval() function</a></li>
     </ul>
+    {% include quiz-button.html quiz_id="unit2_python" %}
   </div>
 
   <div class="unit">

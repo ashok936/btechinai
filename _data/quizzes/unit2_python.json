@@ -1,0 +1,525 @@
+{
+  "title": "Unit 2: Data Types, Input/Output Practice",
+  "questions": [
+    {
+      "type": "simple",
+      "text": "Which function is used to take input from the user in Python?",
+      "options": [
+        "get()",
+        "input()",
+        "read()",
+        "scanf()"
+      ],
+      "correct_option": 1,
+      "hint": "It takes the user's input as a string.",
+      "reasoning": "The input() function is the standard way to capture user keystrokes in Python."
+    },
+    {
+      "type": "simple",
+      "text": "What is the default data type of the value returned by the input() function?",
+      "options": [
+        "int",
+        "float",
+        "str",
+        "bool"
+      ],
+      "correct_option": 2,
+      "hint": "Even if you enter a number, it's wrapped in quotes.",
+      "reasoning": "input() always returns data as a string (str). You must typecast it if you need a number."
+    },
+    {
+      "type": "simple",
+      "text": "Which function is used to display output on the screen?",
+      "options": [
+        "display()",
+        "write()",
+        "output()",
+        "print()"
+      ],
+      "correct_option": 3,
+      "hint": "Most common function for debugging.",
+      "reasoning": "The print() function sends data to the standard output device (usually the screen)."
+    },
+    {
+      "type": "simple",
+      "text": "Which of these is a valid integer in Python?",
+      "options": [
+        "10.5",
+        "\"10\"",
+        "10",
+        "Ten"
+      ],
+      "correct_option": 2,
+      "hint": "Whole numbers without quotes or decimals.",
+      "reasoning": "Integers (int) are whole numbers like 10, -5, or 0."
+    },
+    {
+      "type": "simple",
+      "text": "What is the result of type(3.14)?",
+      "options": [
+        "<class 'int'>",
+        "<class 'float'>",
+        "<class 'double'>",
+        "<class 'num'>"
+      ],
+      "correct_option": 1,
+      "hint": "Think of floating point numbers.",
+      "reasoning": "Numbers with decimal points are stored as floating point objects (float) in Python."
+    },
+    {
+      "type": "simple",
+      "text": "Which of these is a boolean value in Python?",
+      "options": [
+        "true",
+        "TRUE",
+        "True",
+        "1"
+      ],
+      "correct_option": 2,
+      "hint": "It must be capitalized and not a string.",
+      "reasoning": "Python's boolean type has two values: True and False (case-sensitive)."
+    },
+    {
+      "type": "simple",
+      "text": "Which symbol is used for the assignment of a value to a variable?",
+      "options": [
+        "==",
+        ":=",
+        "=",
+        "->"
+      ],
+      "correct_option": 2,
+      "hint": "A single character used to 'set' a value.",
+      "reasoning": "The single '=' is the assignment operator. '==' is for comparison."
+    },
+    {
+      "type": "simple",
+      "text": "Which of the following is an INVALID variable name in Python?",
+      "options": [
+        "_my_var",
+        "myVar2",
+        "2my_var",
+        "MY_VAR"
+      ],
+      "correct_option": 2,
+      "hint": "Variable names cannot start with a certain type of character.",
+      "reasoning": "Identifiers cannot start with a digit (0-9)."
+    },
+    {
+      "type": "simple",
+      "text": "What is a 'literal' in Python?",
+      "options": [
+        "A variable name",
+        "A constant value",
+        "A reserved keyword",
+        "A function name"
+      ],
+      "correct_option": 1,
+      "hint": "Fixed data values.",
+      "reasoning": "Literals are data items that have a fixed value, like 42, 'Hello', or 3.14."
+    },
+    {
+      "type": "simple",
+      "text": "Which of these is a keyword in Python?",
+      "options": [
+        "input",
+        "print",
+        "while",
+        "main"
+      ],
+      "correct_option": 2,
+      "hint": "Used for loop control.",
+      "reasoning": "'while' is a reserved keyword. input and print are built-in functions."
+    },
+    {
+      "type": "simple",
+      "text": "What does print(\"Hello\", \"World\") output by default?",
+      "options": [
+        "HelloWorld",
+        "Hello World",
+        "Hello, World",
+        "Hello\nWorld"
+      ],
+      "correct_option": 1,
+      "hint": "The default separator is a space.",
+      "reasoning": "By default, print() inserts a space between multiple arguments."
+    },
+    {
+      "type": "simple",
+      "text": "What is the result of 10 + 5 in Python?",
+      "options": [
+        "15",
+        "\"15\"",
+        "105",
+        "Error"
+      ],
+      "correct_option": 0,
+      "hint": "Standard addition.",
+      "reasoning": "Adding two integers results in their mathematical sum as an integer."
+    },
+    {
+      "type": "simple",
+      "text": "Which punctuator is used to end a statement or start a block of code in Python?",
+      "options": [
+        ";",
+        ":",
+        ".",
+        "{"
+      ],
+      "correct_option": 1,
+      "hint": "Used at the end of 'if', 'for', and 'def' lines.",
+      "reasoning": "The colon (:) is used to indicate the start of an indented code block."
+    },
+    {
+      "type": "simple",
+      "text": "How do you define a multi-line string literal?",
+      "options": [
+        "/* string */",
+        "// string",
+        "''' string '''",
+        "# string"
+      ],
+      "correct_option": 2,
+      "hint": "Triple quotes are used.",
+      "reasoning": "Triple-single (''') or triple-double (\"\"\") quotes are used for multi-line strings."
+    },
+    {
+      "type": "simple",
+      "text": "Which data type is used to store a sequence of characters?",
+      "options": [
+        "char",
+        "sequence",
+        "str",
+        "text"
+      ],
+      "correct_option": 2,
+      "hint": "Short for string.",
+      "reasoning": "In Python, the 'str' type is used for all textual data."
+    },
+    {
+      "type": "simple",
+      "text": "What is the result of int(\"25\")?",
+      "options": [
+        "\"25\"",
+        "25.0",
+        "25",
+        "Error"
+      ],
+      "correct_option": 2,
+      "hint": "It converts a string to a whole number.",
+      "reasoning": "The int() function parses a string and returns it as an integer object."
+    },
+    {
+      "type": "simple",
+      "text": "Can a variable name start with an underscore (_)?",
+      "options": [
+        "Yes",
+        "No",
+        "Only in classes",
+        "Only for constants"
+      ],
+      "correct_option": 0,
+      "hint": "Think of private variables.",
+      "reasoning": "Variable names (identifiers) can start with a letter or an underscore."
+    },
+    {
+      "type": "simple",
+      "text": "Which operator is used for string concatenation?",
+      "options": [
+        "&",
+        "+",
+        "*",
+        "concat"
+      ],
+      "correct_option": 1,
+      "hint": "The plus sign.",
+      "reasoning": "The '+' operator joins two strings together into one."
+    },
+    {
+      "type": "simple",
+      "text": "What is the output of print(type(True))?",
+      "options": [
+        "<class 'bool'>",
+        "<class 'boolean'>",
+        "True",
+        "bool"
+      ],
+      "correct_option": 0,
+      "hint": "Python uses the keyword 'bool'.",
+      "reasoning": "The boolean type is officially represented as <class 'bool'>."
+    },
+    {
+      "type": "simple",
+      "text": "Which of these is NOT a core data type in Python?",
+      "options": [
+        "List",
+        "Dictionary",
+        "Queue",
+        "Tuple"
+      ],
+      "correct_option": 2,
+      "hint": "One of these is usually imported from a module like 'collections'.",
+      "reasoning": "Queues are not part of the basic built-in core types like list, dict, and tuple."
+    },
+    {
+      "type": "moderate",
+      "text": "What is the output of print(\"Hi\" * 3)?",
+      "options": [
+        "HiHiHi",
+        "Hi 3",
+        "HiHi",
+        "Error"
+      ],
+      "correct_option": 0,
+      "hint": "String repetition.",
+      "reasoning": "Multiplying a string by an integer 'n' repeats it 'n' times."
+    },
+    {
+      "type": "moderate",
+      "text": "How do you specify a different separator between items in a print() function?",
+      "options": [
+        "separator=\"-\"",
+        "sep=\"-\"",
+        "end=\"-\"",
+        "split=\"-\""
+      ],
+      "correct_option": 1,
+      "hint": "A three-letter keyword argument.",
+      "reasoning": "The 'sep' argument allows you to change the string placed between arguments."
+    },
+    {
+      "type": "moderate",
+      "text": "What does the 'end' parameter in print() do?",
+      "options": [
+        "Stops the program",
+        "Specifies what to print after all items",
+        "Specifies the last item to print",
+        "Deletes the last character"
+      ],
+      "correct_option": 1,
+      "hint": "Default value is '\\n'.",
+      "reasoning": "The 'end' argument sets what is printed at the very end (default is a newline)."
+    },
+    {
+      "type": "moderate",
+      "text": "What is the result of eval(\"10 + 20\")?",
+      "options": [
+        "\"10 + 20\"",
+        "30",
+        "30.0",
+        "Error"
+      ],
+      "correct_option": 1,
+      "hint": "It evaluates a string as an expression.",
+      "reasoning": "The eval() function takes a string and executes it as Python code, returning the result."
+    },
+    {
+      "type": "moderate",
+      "text": "How do you convert a float (e.g., 3.9) to an integer in Python?",
+      "options": [
+        "round(3.9)",
+        "ceil(3.9)",
+        "int(3.9)",
+        "floor(3.9)"
+      ],
+      "correct_option": 2,
+      "hint": "It truncates the decimal part.",
+      "reasoning": "The int() function removes the decimal part without rounding (3.9 becomes 3)."
+    },
+    {
+      "type": "moderate",
+      "text": "What is an escape sequence?",
+      "options": [
+        "A way to exit a loop",
+        "A sequence starting with \\ to represent special characters",
+        "A shortcut for functions",
+        "A bug in the code"
+      ],
+      "correct_option": 1,
+      "hint": "Example: \\n or \\t.",
+      "reasoning": "Escape sequences allow representation of characters that are hard to type directly."
+    },
+    {
+      "type": "moderate",
+      "text": "Which of these represents a complex number in Python?",
+      "options": [
+        "2 + 3i",
+        "2 + 3j",
+        "2 + 3k",
+        "Complex(2, 3)"
+      ],
+      "correct_option": 1,
+      "hint": "Python uses 'j' for the imaginary part.",
+      "reasoning": "Complex numbers in Python use 'j' or 'J' as the imaginary suffix."
+    },
+    {
+      "type": "moderate",
+      "text": "What is the purpose of the backslash (\\) at the very end of a line in a long statement?",
+      "options": [
+        "It's a comment",
+        "It's an error",
+        "It signifies line continuation",
+        "It ends the script"
+      ],
+      "correct_option": 2,
+      "hint": "Used when a single line of code is too long.",
+      "reasoning": "A backslash at the end of a line tells Python that the statement continues on the next line."
+    },
+    {
+      "type": "moderate",
+      "text": "What is the result of bool(\"False\")?",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "correct_option": 0,
+      "hint": "Is the string empty?",
+      "reasoning": "Any non-empty string is 'truthy' in Python, even if the text is \"False\"."
+    },
+    {
+      "type": "moderate",
+      "text": "Which function provides information about a variable's data type?",
+      "options": [
+        "what()",
+        "kind()",
+        "type()",
+        "class()"
+      ],
+      "correct_option": 2,
+      "hint": "Commonly used for debugging and validation.",
+      "reasoning": "The type() function returns the class (type) of the object passed to it."
+    },
+    {
+      "type": "difficult",
+      "text": "What is the difference between / and // operators in Python 3?",
+      "options": [
+        "None, they are identical",
+        "/ is integer division, // is float division",
+        "/ is float division, // is floor (integer) division",
+        "/ is for variables, // is for literals"
+      ],
+      "correct_option": 2,
+      "hint": "One keeps the decimal, one throws it away.",
+      "reasoning": "The '/' always returns a float, while '//' performs floor division and returns an integer (for int inputs)."
+    },
+    {
+      "type": "difficult",
+      "text": "What happens if you run: print(sep=\"-\", \"A\", \"B\")?",
+      "options": [
+        "A-B",
+        "-AB",
+        "SyntaxError",
+        "TypeError"
+      ],
+      "correct_option": 2,
+      "hint": "Look at the order of keyword and positional arguments.",
+      "reasoning": "Python requires all positional arguments (like \"A\", \"B\") to come before keyword arguments (like sep=\"-\")."
+    },
+    {
+      "type": "difficult",
+      "text": "If a user enters [1, 2, 3] into result = eval(input()), what will be the type of 'result'?",
+      "options": [
+        "str",
+        "list",
+        "tuple",
+        "Error"
+      ],
+      "correct_option": 1,
+      "hint": "eval() interprets the string as Python source.",
+      "reasoning": "eval() will see the string \"[1, 2, 3]\" as a literal list and create a list object."
+    },
+    {
+      "type": "difficult",
+      "text": "Which of these are considered 'Tokens' in Python?",
+      "options": [
+        "Keywords and Identifiers",
+        "Literals and Operators",
+        "Delimiters (Punctuators)",
+        "All of the above"
+      ],
+      "correct_option": 3,
+      "hint": "The smallest individual units in a program.",
+      "reasoning": "Tokens are the basic building blocks: keywords, identifiers, literals, operators, and delimiters."
+    },
+    {
+      "type": "difficult",
+      "text": "What is the result of 0.1 + 0.2 == 0.3 in Python?",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "Depends on the OS"
+      ],
+      "correct_option": 1,
+      "hint": "Think about floating point binary representation.",
+      "reasoning": "Due to how floats are stored in binary, 0.1 + 0.2 is actually 0.30000000000000004, so it doesn't equal exactly 0.3."
+    },
+    {
+      "type": "difficult",
+      "text": "What is the output of print(\"A\", \"B\", sep=\":\", end=\"!\")?",
+      "options": [
+        "A B:!",
+        "A:B!",
+        "A:B\n!",
+        "Error"
+      ],
+      "correct_option": 1,
+      "hint": "Apply the separator first, then the end character.",
+      "reasoning": "The ':' is placed between A and B, and '!' is placed at the end instead of a newline."
+    },
+    {
+      "type": "difficult",
+      "text": "Which 'Character Set' does Python 3 use for its source code and string representation?",
+      "options": [
+        "ASCII",
+        "Extended ASCII",
+        "Unicode",
+        "UTF-8 only"
+      ],
+      "correct_option": 2,
+      "hint": "It allows characters from almost all languages.",
+      "reasoning": "Python 3 uses Unicode, enabling support for a vast range of symbols and international characters."
+    },
+    {
+      "type": "difficult",
+      "text": "What happens if you run eval(\"x + 5\") if 'x' has not been defined?",
+      "options": [
+        "It returns None",
+        "It raises a NameError",
+        "It treats x as 0",
+        "It returns \"x + 5\""
+      ],
+      "correct_option": 1,
+      "hint": "eval() runs the code in the current scope.",
+      "reasoning": "Since eval() executes code, it will fail with a NameError if it encounters an undefined variable."
+    },
+    {
+      "type": "difficult",
+      "text": "Is 'print' a reserved keyword in Python 3?",
+      "options": [
+        "Yes",
+        "No, it's a built-in function",
+        "Yes, but only in Python 2",
+        "Only when used with parentheses"
+      ],
+      "correct_option": 1,
+      "hint": "In Python 2 it was a statement; in Python 3 it changed.",
+      "reasoning": "In Python 3, print() is a built-in function. You can even reassign it (though not recommended!)."
+    },
+    {
+      "type": "difficult",
+      "text": "Which of the following is a 'Punctuator' (Delimiter) in Python?",
+      "options": [
+        "=",
+        "+",
+        "**",
+        "]"
+      ],
+      "correct_option": 3,
+      "hint": "It bounds or separates other tokens.",
+      "reasoning": "Brackets, braces, parentheses, and commas are delimiters. =, +, and ** are operators."
+    }
+  ]
+}
