@@ -86,7 +86,11 @@ nav_exclude: true
 
     <div class="question">
       <p><strong>9.</strong> Explain <strong>continue</strong>, <strong>pass</strong>, and <strong>return</strong> statements and show how to use them within loops or functions. Write a Python program to display the following output: <span class="marks">[6]</span></p>
-      <pre>***</pre>
+      <pre class="pattern-output">
+   *
+  ***
+ *****
+*******</pre>
     </div>
 
     <div class="question">
@@ -105,5 +109,14 @@ nav_exclude: true
 }
 .back-link:hover {
   color: var(--text-main);
+}
+.pattern-output {
+  display: inline-block;
+  background: var(--bg-code);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  margin-top: 10px;
+  line-height: normal;
 }
 </style>
