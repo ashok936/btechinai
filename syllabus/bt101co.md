@@ -47,19 +47,19 @@ nav_exclude: true
   <div class="unit">
     <h3>Unit 3: Operators <span class="unit-hours">[3 Hrs]</span></h3>
     <ul>
-      <li>3.1 Arithmetic Operators</li>
-      <li>3.2 Operator Precedence and Associativity</li>
-      <li>3.3 Bitwise Operator</li>
-      <li>3.4 Compound Assignment, Boolean, and Relational Operators</li>
+      <li><a href="/syllabus/bt101co/arithmetic-operators/">3.1 Arithmetic Operators</a></li>
+      <li><a href="/syllabus/bt101co/precedence-associativity/">3.2 Operator Precedence and Associativity</a></li>
+      <li><a href="/syllabus/bt101co/bitwise-operator/">3.3 Bitwise Operator</a></li>
+      <li><a href="/syllabus/bt101co/compound-assignment/">3.4 Compound Assignment, Boolean, and Relational Operators</a></li>
     </ul>
   </div>
 
   <div class="unit">
     <h3>Unit 4: Control Statements <span class="unit-hours">[7 Hrs]</span></h3>
     <ul>
-      <li>4.1 Decision making: if-else, if-elif-else</li>
-      <li>4.2 Loop Control: while loop, for loop</li>
-      <li>4.3 continue, assert, pass, return statements</li>
+      <li><a href="/syllabus/bt101co/decision-making/">4.1 Decision making: if-else, if-elif-else</a></li>
+      <li><a href="/syllabus/bt101co/loop-control/">4.2 Loop Control: while loop, for loop</a></li>
+      <li><a href="/syllabus/bt101co/extra-control/">4.3 Control Statements: continue, assert, pass, return</a></li>
     </ul>
   </div>
 
