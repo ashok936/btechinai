@@ -1,0 +1,14 @@
+{% assign q_data = site.data.quizzes[include.quiz_id] %}
+{% if q_data %}
+  <div class="quiz-btn-container">
+    <button class="unit-quiz-btn" onclick="openQuiz('{{ include.quiz_id }}')">
+       Practice Quiz ✨
+    </button>
+    <script id="quiz-data-{{ include.quiz_id }}" type="application/json">
+      {{ q_data.questions | jsonify }}
+    </script>
+    <script id="quiz-title-{{ include.quiz_id }}" type="application/json">
+      "{{ q_data.title | default: 'Practice Quiz' }}"
+    </script>
+  </div>
+{% endif %}

@@ -1,0 +1,525 @@
+{
+  "title": "Unit 1: Python Introduction Practice",
+  "questions": [
+    {
+      "type": "simple",
+      "text": "Who developed Python?",
+      "options": [
+        "Guido van Rossum",
+        "Dennis Ritchie",
+        "James Gosling",
+        "Bjarne Stroustrup"
+      ],
+      "correct_option": 0,
+      "hint": "Often called the BDFL.",
+      "reasoning": "Python was created by Guido van Rossum and first released in 1991."
+    },
+    {
+      "type": "simple",
+      "text": "Is Python case sensitive?",
+      "options": [
+        "Yes",
+        "No",
+        "Sometimes",
+        "Only in functions"
+      ],
+      "correct_option": 0,
+      "hint": "Think of how variables 'a' and 'A' are treated.",
+      "reasoning": "Python treats uppercase and lowercase characters differently."
+    },
+    {
+      "type": "simple",
+      "text": "Which of these is the correct file extension for Python files?",
+      "options": [
+        ".pyth",
+        ".pt",
+        ".py",
+        ".pyt"
+      ],
+      "correct_option": 2,
+      "hint": "It's a two-letter extension.",
+      "reasoning": "Python source files use the .py extension conventionally."
+    },
+    {
+      "type": "simple",
+      "text": "How do you insert a comment in Python code?",
+      "options": [
+        "// This is a comment",
+        "/* This is a comment */",
+        "# This is a comment",
+        "-- This is a comment"
+      ],
+      "correct_option": 2,
+      "hint": "Uses a hash symbol.",
+      "reasoning": "Single-line comments in Python start with the '#' character."
+    },
+    {
+      "type": "simple",
+      "text": "Which keyword is used to create a function in Python?",
+      "options": [
+        "function",
+        "def",
+        "create",
+        "func"
+      ],
+      "correct_option": 1,
+      "hint": "Short for define.",
+      "reasoning": "The 'def' keyword is used to start defining a function."
+    },
+    {
+      "type": "simple",
+      "text": "Which function outputs text to the console?",
+      "options": [
+        "echo",
+        "print()",
+        "console.log()",
+        "System.out.print()"
+      ],
+      "correct_option": 1,
+      "hint": "Common across many languages.",
+      "reasoning": "The print() function is used to write to standard output."
+    },
+    {
+      "type": "simple",
+      "text": "Which of the following is NOT a core data type in Python?",
+      "options": [
+        "Class",
+        "Dictionary",
+        "List",
+        "Tuple"
+      ],
+      "correct_option": 0,
+      "hint": "One of these is a structural concept, not a base data structure.",
+      "reasoning": "Classes are templates for creating objects, whereas list, dict, and tuple are built-in core types."
+    },
+    {
+      "type": "simple",
+      "text": "How do you start a while loop?",
+      "options": [
+        "while x > y {",
+        "while (x > y)",
+        "while x > y:",
+        "while x > y then"
+      ],
+      "correct_option": 2,
+      "hint": "Requires a specific punctuation mark.",
+      "reasoning": "Python uses a colon ':' to denote the start of an indented block."
+    },
+    {
+      "type": "simple",
+      "text": "How do you return a value from a function?",
+      "options": [
+        "return value",
+        "return (value)",
+        "exit value",
+        "yield value"
+      ],
+      "correct_option": 0,
+      "hint": "Standard keyword for ending a function block with a value.",
+      "reasoning": "The 'return' keyword sends a result back to the caller."
+    },
+    {
+      "type": "simple",
+      "text": "What is the result of 3 ** 2 in Python?",
+      "options": [
+        "6",
+        "9",
+        "5",
+        "8"
+      ],
+      "correct_option": 1,
+      "hint": "It means exponentiation.",
+      "reasoning": "The '**' operator means 'to the power of' (3 squared is 9)."
+    },
+    {
+      "type": "simple",
+      "text": "Which character wraps strings in Python?",
+      "options": [
+        "Single quotes",
+        "Double quotes",
+        "Both single and double quotes",
+        "Backticks"
+      ],
+      "correct_option": 2,
+      "hint": "You can use multiple types.",
+      "reasoning": "Python accepts both 'string' and \"string\" forms interchangeably."
+    },
+    {
+      "type": "simple",
+      "text": "What does the len() function do?",
+      "options": [
+        "Returns the length of an object",
+        "Converts a string to lowercase",
+        "Counts numbers",
+        "Finds the largest item"
+      ],
+      "correct_option": 0,
+      "hint": "Short for layout/length.",
+      "reasoning": "len() returns the total number of items in a sequence or collection."
+    },
+    {
+      "type": "simple",
+      "text": "How do you read input from the user?",
+      "options": [
+        "in()",
+        "input()",
+        "read()",
+        "scan()"
+      ],
+      "correct_option": 1,
+      "hint": "Directly describes the action.",
+      "reasoning": "input() is the built-in function to capture user keystrokes until Enter is pressed."
+    },
+    {
+      "type": "simple",
+      "text": "What type is returned by input() by default?",
+      "options": [
+        "int",
+        "float",
+        "string",
+        "bool"
+      ],
+      "correct_option": 2,
+      "hint": "Even numbers are returned as this.",
+      "reasoning": "input() always returns a string; you must cast it to 'int' or 'float' explicitly."
+    },
+    {
+      "type": "simple",
+      "text": "Which symbol is used for variable assignment?",
+      "options": [
+        "==",
+        "===",
+        "=>",
+        "="
+      ],
+      "correct_option": 3,
+      "hint": "A single character.",
+      "reasoning": "The single '=' is the assignment operator, distinct from '==' for comparison."
+    },
+    {
+      "type": "simple",
+      "text": "Is a Python list mutable or immutable?",
+      "options": [
+        "Mutable",
+        "Immutable",
+        "Both",
+        "Neither"
+      ],
+      "correct_option": 0,
+      "hint": "Can you change its elements after creation?",
+      "reasoning": "Lists are mutable, meaning their contents can be altered in-place."
+    },
+    {
+      "type": "simple",
+      "text": "What command is used to bring a module into a script?",
+      "options": [
+        "include",
+        "import",
+        "require",
+        "using"
+      ],
+      "correct_option": 1,
+      "hint": "It means to bring in from outside.",
+      "reasoning": "The 'import' keyword is used to load an external or built-in module."
+    },
+    {
+      "type": "simple",
+      "text": "What is the index of the first element in a Python list?",
+      "options": [
+        "0",
+        "1",
+        "-1",
+        "Depends on the list"
+      ],
+      "correct_option": 0,
+      "hint": "Computer zero-bound.",
+      "reasoning": "Python uses 0-based indexing for standard collections like lists and tuples."
+    },
+    {
+      "type": "simple",
+      "text": "Which of these is a Python boolean?",
+      "options": [
+        "True",
+        "true",
+        "TRUE",
+        "1"
+      ],
+      "correct_option": 0,
+      "hint": "It's case-sensitive.",
+      "reasoning": "Python booleans are 'True' and 'False' (capitalized)."
+    },
+    {
+      "type": "simple",
+      "text": "What does the 'break' keyword do?",
+      "options": [
+        "Stops the program entirely",
+        "Exits the current function",
+        "Exits the current loop",
+        "Skips to the next iteration"
+      ],
+      "correct_option": 2,
+      "hint": "It breaks out.",
+      "reasoning": "'break' immediately terminates the innermost enclosing loop."
+    },
+    {
+      "type": "moderate",
+      "text": "What is the output of 'Hello'[1]?",
+      "options": [
+        "H",
+        "e",
+        "l",
+        "Hello"
+      ],
+      "correct_option": 1,
+      "hint": "Remember 0-based indexing.",
+      "reasoning": "The character at index 1 is 'e', since index 0 is 'H'."
+    },
+    {
+      "type": "moderate",
+      "text": "Which operator performs floor division?",
+      "options": [
+        "/",
+        "//",
+        "%",
+        "**"
+      ],
+      "correct_option": 1,
+      "hint": "Double character.",
+      "reasoning": "The '//' operator divides and truncates the decimal part, returning an integer."
+    },
+    {
+      "type": "moderate",
+      "text": "How can you add 'item' to the end of a list?",
+      "options": [
+        "list.add('item')",
+        "list.insert('item')",
+        "list.append('item')",
+        "list.push('item')"
+      ],
+      "correct_option": 2,
+      "hint": "It appends to the structure.",
+      "reasoning": "The .append() method specifically adds an element to the trailing end of a list."
+    },
+    {
+      "type": "moderate",
+      "text": "What does the % operator do?",
+      "options": [
+        "Percentages",
+        "Modular division (remainder)",
+        "String concatenation",
+        "Exponentiation"
+      ],
+      "correct_option": 1,
+      "hint": "Used for remainders.",
+      "reasoning": "The modulo operator (%) yields the remainder of a division."
+    },
+    {
+      "type": "moderate",
+      "text": "What happens when you try to use a local variable outside its function?",
+      "options": [
+        "It works normally",
+        "It returns None",
+        "It raises a NameError",
+        "It becomes a global variable"
+      ],
+      "correct_option": 2,
+      "hint": "Think about variable scope.",
+      "reasoning": "Local variables are destroyed after the function returns; accessing them outside raises a NameError."
+    },
+    {
+      "type": "moderate",
+      "text": "Which function returns a sequence of numbers?",
+      "options": [
+        "sequence()",
+        "range()",
+        "list()",
+        "numbers()"
+      ],
+      "correct_option": 1,
+      "hint": "Used frequently in 'for' loops.",
+      "reasoning": "The range() function generates a sequence of numbers, often used for looping."
+    },
+    {
+      "type": "moderate",
+      "text": "What does lambda mean in Python?",
+      "options": [
+        "A built-in data type",
+        "An anonymous function",
+        "A loop control structure",
+        "A module for math operations"
+      ],
+      "correct_option": 1,
+      "hint": "It creates functions without the 'def' keyword.",
+      "reasoning": "Lambda functions are small, unnamed functions defined on a single line."
+    },
+    {
+      "type": "moderate",
+      "text": "Which method converts a string to all uppercase?",
+      "options": [
+        ".uppercase()",
+        ".upper()",
+        ".up()",
+        ".toUpper()"
+      ],
+      "correct_option": 1,
+      "hint": "A shorter version of uppercase.",
+      "reasoning": "The .upper() method works on strings to capitalize all letters."
+    },
+    {
+      "type": "moderate",
+      "text": "What is the result of type([1, 2, 3])?",
+      "options": [
+        "<class 'list'>",
+        "<class 'tuple'>",
+        "<class 'array'>",
+        "<class 'set'>"
+      ],
+      "correct_option": 0,
+      "hint": "Bracket type matters.",
+      "reasoning": "Square brackets indicate a list object in Python."
+    },
+    {
+      "type": "moderate",
+      "text": "Can a Python dictionary have duplicate keys?",
+      "options": [
+        "Yes",
+        "No",
+        "Only if values are unique",
+        "Only for integers"
+      ],
+      "correct_option": 1,
+      "hint": "Keys must uniquely map to values.",
+      "reasoning": "Dictionaries enforce key uniqueness. If you assign to an existing key, the value is overwritten."
+    },
+    {
+      "type": "difficult",
+      "text": "What is the output of print(2 == 2.0)?",
+      "options": [
+        "True",
+        "False",
+        "TypeError",
+        "SyntaxError"
+      ],
+      "correct_option": 0,
+      "hint": "Value equality vs object identity.",
+      "reasoning": "The values are mathematically equal, so the == operator returns True, despite different types."
+    },
+    {
+      "type": "difficult",
+      "text": "How does Python handle garbage collection?",
+      "options": [
+        "It doesn't have it",
+        "Reference counting",
+        "Manual deletion only",
+        "Only when explicitly called"
+      ],
+      "correct_option": 1,
+      "hint": "It counts how many things point to an object.",
+      "reasoning": "Python mostly relies on Reference Counting, supplemented by a cyclic garbage collector."
+    },
+    {
+      "type": "difficult",
+      "text": "What is the time complexity of searching an item in a set?",
+      "options": [
+        "O(1) average",
+        "O(n)",
+        "O(log n)",
+        "O(n^2)"
+      ],
+      "correct_option": 0,
+      "hint": "Sets use hash tables.",
+      "reasoning": "Sets use hashing, giving them expected O(1) time complexity for lookups."
+    },
+    {
+      "type": "difficult",
+      "text": "What does a generator function return instead of typical values?",
+      "options": [
+        "A list",
+        "An iterator object",
+        "A tuple",
+        "A dictionary"
+      ],
+      "correct_option": 1,
+      "hint": "It yields values lazily.",
+      "reasoning": "Generators use the 'yield' keyword to return a lazy iterator object."
+    },
+    {
+      "type": "difficult",
+      "text": "Which of the following creates a deep copy of a list?",
+      "options": [
+        "list2 = list1",
+        "list2 = list1[:]",
+        "import copy; list2 = copy.deepcopy(list1)",
+        "list2 = list1.copy()"
+      ],
+      "correct_option": 2,
+      "hint": "What if the list contains nested lists?",
+      "reasoning": "Standard copying just copies references of nested objects. deepcopy creates new independent objects at all levels."
+    },
+    {
+      "type": "difficult",
+      "text": "What is a decorator in Python?",
+      "options": [
+        "A UI styling tool",
+        "A class attribute",
+        "A function that modifies another function",
+        "A syntax for loops"
+      ],
+      "correct_option": 2,
+      "hint": "They 'decorate' a function.",
+      "reasoning": "Decorators are higher-order functions that take a function, extend its behavior, and return it."
+    },
+    {
+      "type": "difficult",
+      "text": "What does 'self' refer to in a class method?",
+      "options": [
+        "The class itself",
+        "A built-in keyword",
+        "The instance calling the method",
+        "The superclass"
+      ],
+      "correct_option": 2,
+      "hint": "It represents the object context.",
+      "reasoning": "The 'self' parameter represents the specific object instance that the method is acting upon."
+    },
+    {
+      "type": "difficult",
+      "text": "What will bool([]) return?",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "correct_option": 1,
+      "hint": "Think of truthy and falsy values.",
+      "reasoning": "Empty collections in Python evaluate to False in a boolean context."
+    },
+    {
+      "type": "difficult",
+      "text": "What is the result of 'a' and 'b' in Python?",
+      "options": [
+        "'a'",
+        "'b'",
+        "True",
+        "False"
+      ],
+      "correct_option": 1,
+      "hint": "Short-circuit evaluation rule.",
+      "reasoning": "The 'and' operator evaluates to the last truthy value, which is 'b'."
+    },
+    {
+      "type": "difficult",
+      "text": "Which of the following methods allows modifying global variables inside a function?",
+      "options": [
+        "global var_name",
+        "static var_name",
+        "nonlocal var_name",
+        "modify var_name"
+      ],
+      "correct_option": 0,
+      "hint": "It declares the scope context.",
+      "reasoning": "The 'global' keyword binds a local name to the module-level (global) namespace variable."
+    }
+  ]
+}

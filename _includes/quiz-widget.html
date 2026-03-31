@@ -1,0 +1,151 @@
+<div id="quiz-modal">
+  <div class="quiz-header">
+    <h2 id="quiz-title">Practice Quiz</h2>
+    <button class="close-quiz" onclick="closeQuiz()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+  </div>
+  <div class="quiz-body" id="quiz-body">
+      <!-- render stats -->
+      <div class="quiz-stats" id="quiz-stats" style="display: none;">
+        <span class="stat-progress" id="quiz-progress">Question 1 / 40</span>
+        <div>
+          <span class="stat-passes">✓ <span id="quiz-passes">0</span></span>
+          <span style="margin: 0 5px;">|</span>
+          <span class="stat-fails">✗ <span id="quiz-fails">0</span></span>
+        </div>
+      </div>
+      <div id="quiz-content">
+        <!-- Dynamic content -->
+      </div>
+  </div>
+</div>
+
+<script>
+  let modalQuizData = [];
+  let currentQuestionIndex = 0;
+  let passes = 0;
+  let fails = 0;
+  let quizActive = false;
+  let answered = false;
+
+  window.openQuiz = function(quizId) {
+    const rawData = document.getElementById('quiz-data-' + quizId).textContent;
+    const rawTitle = document.getElementById('quiz-title-' + quizId).textContent;
+    modalQuizData = JSON.parse(rawData);
+    document.getElementById('quiz-title').innerText = JSON.parse(rawTitle);
+    
+    document.getElementById('quiz-modal').classList.add('open');
+    startQuiz();
+  };
+
+  window.closeQuiz = function() {
+    document.getElementById('quiz-modal').classList.remove('open');
+    quizActive = false;
+  };
+
+  function startQuiz() {
+    currentQuestionIndex = 0;
+    passes = 0;
+    fails = 0;
+    quizActive = true;
+    document.getElementById('quiz-stats').style.display = 'flex';
+    renderQuestion();
+  }
+
+  function renderQuestion() {
+    answered = false;
+    const q = modalQuizData[currentQuestionIndex];
+    const content = document.getElementById('quiz-content');
+    
+    document.getElementById('quiz-progress').innerText = `Question ${currentQuestionIndex + 1} / ${modalQuizData.length}`;
+    document.getElementById('quiz-passes').innerText = passes;
+    document.getElementById('quiz-fails').innerText = fails;
+
+    let typeClass = 'type-simple';
+    if (q.type === 'moderate') typeClass = 'type-moderate';
+    if (q.type === 'difficult') typeClass = 'type-difficult';
+
+    let optionsHtml = '';
+    q.options.forEach((opt, idx) => {
+      optionsHtml += `<button onclick="selectOption(${idx})" id="opt-${idx}">${opt}</button>`;
+    });
+
+    content.innerHTML = `
+      <div class="quiz-question-container">
+        <div class="question-type ${typeClass}">${q.type}</div>
+        <h3>${q.text}</h3>
+        <div class="quiz-options">
+          ${optionsHtml}
+        </div>
+        <div class="hint-box" id="hint-box">${q.hint || "No hint available."}</div>
+        <div class="reasoning-box" id="reasoning-box">${q.reasoning || ""}</div>
+        
+        <div class="quiz-actions">
+          <button class="hint-btn" onclick="showHint()" id="hint-btn">Show Hint</button>
+          <button class="next-btn" onclick="nextQuestion()" id="next-btn">Next Question</button>
+        </div>
+      </div>
+    `;
+  }
+
+  window.showHint = function() {
+    document.getElementById('hint-box').style.display = 'block';
+    document.getElementById('hint-btn').style.display = 'none';
+  }
+
+  window.selectOption = function(idx) {
+    if (answered) return;
+    answered = true;
+    const q = modalQuizData[currentQuestionIndex];
+    const isCorrect = (idx === q.correct_option);
+
+    if (isCorrect) passes++;
+    else fails++;
+
+    document.getElementById('quiz-passes').innerText = passes;
+    document.getElementById('quiz-fails').innerText = fails;
+
+    q.options.forEach((_, i) => {
+        const btn = document.getElementById(`opt-${i}`);
+        btn.disabled = true;
+        if (i === q.correct_option) {
+          btn.classList.add('correct');
+        } else if (i === idx) {
+          btn.classList.add('wrong');
+        }
+    });
+
+    const reasoningBox = document.getElementById('reasoning-box');
+    reasoningBox.style.display = 'block';
+    if (!isCorrect) reasoningBox.classList.add('incorrect-reasoning');
+
+    document.getElementById('next-btn').style.display = 'block';
+    document.getElementById('hint-btn').style.display = 'none';
+  };
+
+  window.nextQuestion = function() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < modalQuizData.length) {
+      renderQuestion();
+    } else {
+      showResults();
+    }
+  };
+
+  function showResults() {
+    document.getElementById('quiz-stats').style.display = 'none';
+    const content = document.getElementById('quiz-content');
+    content.innerHTML = `
+      <div class="quiz-finished">
+          <h2>Quiz Complete!</h2>
+          <div class="score-label">Final Score</div>
+          <div class="final-score" style="color: ${passes > fails ? '#10b981' : '#ef4444'}">${passes} / ${modalQuizData.length}</div>
+          <p style="margin-bottom: 30px; color: var(--text-muted)">
+            You passed ${passes} questions and failed ${fails} questions.
+          </p>
+          <button class="restart-btn" onclick="startQuiz()">Restart Quiz</button>
+      </div>
+    `;
+  }
+</script>

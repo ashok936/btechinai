@@ -28,6 +28,7 @@ nav_exclude: true
       <li><a href="/syllabus/bt101co/documentation/">1.5 Python Documentation</a></li>
       <li><a href="/syllabus/bt101co/comparing-python/">1.6 Comparing Python</a></li>
     </ul>
+    {% include quiz-button.html quiz_id="unit1_python" %}
   </div>
 
   <div class="unit">
