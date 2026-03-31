@@ -47,6 +47,10 @@ This site is configured for deployment on **GitHub Pages**. Ensure you have a `C
 
 The content of this website is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
 
+## Contributing
+
+We welcome community contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
 ## Contact
 
-For inquiries, please contact: [EMAIL_ADDRESS]
+For inquiries, please contact: [contact@btechinai.com](mailto:contact@btechinai.com)
