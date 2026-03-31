@@ -21,12 +21,12 @@ nav_exclude: true
   <div class="unit">
     <h3>Unit 1: Introduction to Python <span class="unit-hours">[4 Hrs]</span></h3>
     <ul>
-      <li>1.1 What is Python?</li>
-      <li>1.2 History of Python</li>
-      <li>1.3 Downloading and Installing Python</li>
-      <li>1.4 Running Python</li>
-      <li>1.5 Python Documentation</li>
-      <li>1.6 Comparing Python</li>
+      <li><a href="/syllabus/bt101co/what-is-python/">1.1 What is Python?</a></li>
+      <li><a href="/syllabus/bt101co/history-of-python/">1.2 History of Python</a></li>
+      <li><a href="/syllabus/bt101co/installing-python/">1.3 Downloading and Installing Python</a></li>
+      <li><a href="/syllabus/bt101co/installing-python/#2-the-cli-command-line-interface">1.4 Running Python</a></li>
+      <li><a href="/syllabus/bt101co/documentation/">1.5 Python Documentation</a></li>
+      <li><a href="/syllabus/bt101co/comparing-python/">1.6 Comparing Python</a></li>
     </ul>
   </div>
 
