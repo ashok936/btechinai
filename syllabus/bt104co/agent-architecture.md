@@ -431,6 +431,27 @@ graph LR
   font-size: 0.9rem;
 }
 
+.exam-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+.exam-table th {
+  text-align: left;
+  background: #f3f4f6;
+  padding: 12px;
+  border-bottom: 2px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.exam-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
 .exam-tip {
   background: #000;
   color: #fff;

@@ -39,10 +39,11 @@ nav_exclude: true
       <li><a href="/syllabus/bt104co/peas/">2.4 PEAS</a></li>
       <li><a href="/syllabus/bt104co/state-space-search/">2.5 Defining Problem as a State Space Search</a></li>
       <li><a href="/syllabus/bt104co/problem-types/">2.6 Problem types</a></li>
-      <li><a href="/syllabus/bt104co/problem-formulation/">2.7 Problem formulation, Problem solving agent, Learning agent</a></li>
+      <li><a href="/syllabus/bt104co/problem-solving-learning/">2.7 Problem-Solving and Learning Agents</a></li>
       <li><a href="/syllabus/bt104co/constraint-satisfaction/">2.8 Constraint Satisfaction Problem, Cryptarithmetic problems</a></li>
       <li><a href="/syllabus/bt104co/game-playing/">2.9 Game Playing</a></li>
     </ul>
+    {% include quiz-button.html quiz_id="unit2_ai" %}
   </div>
 
   <div class="unit">

@@ -1,0 +1,435 @@
+{
+  "title": "Unit 2: Agents and Problem Solving",
+  "questions": [
+    {
+      "type": "simple",
+      "text": "An agent is anything that perceives its environment through ________ and acts through ________.",
+      "options": ["Cameras, Wheels", "Sensors, Actuators", "Logic, Memory", "Eyes, Hands"],
+      "correct_option": 1,
+      "hint": "Generic terms for input and output hardware.",
+      "reasoning": "In AI, sensors are for input and actuators are for output/action."
+    },
+    {
+      "type": "simple",
+      "text": "What does the notation $f: P^* \\rightarrow A$ mathematically represent?",
+      "options": ["Agent Program", "Agent Function", "Percept Sequence", "Transition Model"],
+      "correct_option": 1,
+      "hint": "The abstract mapping of history to action.",
+      "reasoning": "The Agent Function maps any given percept sequence to an action."
+    },
+    {
+      "type": "simple",
+      "text": "Which agent type uses 'Condition-Action Rules' and ignores percept history?",
+      "options": ["Simple Reflex Agent", "Model-based Agent", "Goal-based Agent", "Learning Agent"],
+      "correct_option": 0,
+      "hint": "The most basic type of agent.",
+      "reasoning": "Simple Reflex Agents act only on the current percept based on pre-defined rules."
+    },
+    {
+      "type": "simple",
+      "text": "In the equation 'Agent = Architecture + Program', what does Architecture refer to?",
+      "options": ["The algorithm", "The physical device or hardware", "The source code", "The environment"],
+      "correct_option": 1,
+      "hint": "PC, Robot chassis, etc.",
+      "reasoning": "Architecture is the computing device with sensors and actuators that runs the program."
+    },
+    {
+      "type": "simple",
+      "text": "Which component of a learning agent is responsible for suggesting exploratory actions?",
+      "options": ["Critic", "Learning Element", "Performance Element", "Problem Generator"],
+      "correct_option": 3,
+      "hint": "It generates new experiences.",
+      "reasoning": "The Problem Generator suggests actions that lead to new, informative experiences."
+    },
+    {
+      "type": "simple",
+      "text": "A 'State Space' is defined as:",
+      "options": [
+        "The current room the robot is in",
+        "The set of all possible states reachable from the initial state",
+        "The physical memory of the computer",
+        "The list of actions available"
+      ],
+      "correct_option": 1,
+      "hint": "A map of everywhere the agent could go.",
+      "reasoning": "The state space includes every possible configuration reachable through actions."
+    },
+    {
+      "type": "simple",
+      "text": "In the PEAS framework, what is the difference between a goal and a Performance Measure?",
+      "options": [
+        "There is no difference",
+        "The measure is the criteria for success; the goal is a specific target state",
+        "Goals are for humans; measures are for machines",
+        "Measures are hardware; goals are software"
+      ],
+      "correct_option": 1,
+      "hint": "Happiness vs. Destination.",
+      "reasoning": "Performance measure is the objective criteria for success (e.g., speed), while a goal is a target (e.g., state G)."
+    },
+    {
+      "type": "simple",
+      "text": "Which player in the Minimax algorithm tries to minimize the outcome for the AI?",
+      "options": ["MAX", "MIN", "AGENT", "CRITIC"],
+      "correct_option": 1,
+      "hint": "The opponent's role.",
+      "reasoning": "MIN represents the opponent who seeks to minimize the AI's (MAX's) utility."
+    },
+    {
+      "type": "simple",
+      "text": "What defines the 'Initial State' of an 8-puzzle problem?",
+      "options": ["The solved board", "Any specific configuration of tiles on the board", "Moving a tile down", "Calculating the heuristic"],
+      "correct_option": 1,
+      "hint": "Where the search begins.",
+      "reasoning": "The initial state is the starting configuration of the puzzle."
+    },
+    {
+      "type": "simple",
+      "text": "What is the primary role of the 'Critic' in a learning agent?",
+      "options": [
+        "To find bugs in code",
+        "To evaluate the agent's performance against a fixed standard",
+        "To choose the next action",
+        "To communicate with users"
+      ],
+      "correct_option": 1,
+      "hint": "It judges the outcome.",
+      "reasoning": "The Critic observes the world and tells the learning element how well the agent is doing."
+    },
+    {
+      "type": "simple",
+      "text": "An environment where the agent's sensors give it all relevant information at each point in time is:",
+      "options": ["Partially Observable", "Fully Observable", "Deterministic", "Static"],
+      "correct_option": 1,
+      "hint": "Like Chess, unlike Poker.",
+      "reasoning": "Fully observable means the sensors detect all aspects relevant to the choice of action."
+    },
+    {
+      "type": "simple",
+      "text": "Which property describes an environment that changes while the agent is 'thinking'?",
+      "options": ["Static", "Dynamic", "Semidynamic", "Discrete"],
+      "correct_option": 1,
+      "hint": "Taxi driving is a classic example.",
+      "reasoning": "A dynamic environment keeps moving independently of the agent's deliberation."
+    },
+    {
+      "type": "simple",
+      "text": "In a CSP, what does the 'X' stand for in the <X, D, C> tuple?",
+      "options": ["Extensions", "Variables", "Constraints", "Domains"],
+      "correct_option": 1,
+      "hint": "The things that need values.",
+      "reasoning": "X is the set of variables that must be assigned values."
+    },
+    {
+      "type": "simple",
+      "text": "A 'Path Cost' is:",
+      "options": [
+        "The price of the AI software",
+        "A numeric value assigned to each action sequence",
+        "The number of states in a graph",
+        "The speed of the CPU"
+      ],
+      "correct_option": 1,
+      "hint": "Usually distance, time, or fuel.",
+      "reasoning": "Path cost is the total weight of actions leading from start to goal."
+    },
+    {
+      "type": "simple",
+      "text": "In Cryptarithmetic, what is the 'Unique Digit' rule?",
+      "options": [
+        "All letters must be the same number",
+        "Each letter represents a unique digit from 0 to 9",
+        "Leading letters must be 1",
+        "Letters can only be even numbers"
+      ],
+      "correct_option": 1,
+      "hint": "No two letters can share a value.",
+      "reasoning": "Every distinct letter in a cryptarithmetic puzzle must represent a different digit."
+    },
+    {
+      "type": "simple",
+      "text": "Which algorithm is used to 'prune' unnecessary branches in a game tree?",
+      "options": ["BFS", "DFS", "Alpha-Beta Pruning", "Hill Climbing"],
+      "correct_option": 2,
+      "hint": "It uses two Greek letters.",
+      "reasoning": "Alpha-Beta search reduces the number of nodes evaluated by the minimax algorithm."
+    },
+    {
+      "type": "simple",
+      "text": "A 'Toy Problem' is characterized by:",
+      "options": [
+        "Having no known solution",
+        "A precise, simplified description used to test algorithms",
+        "Being used only for children",
+        "Requiring high-speed GPUs"
+      ],
+      "correct_option": 1,
+      "hint": "8-puzzle, Vacuum-world, etc.",
+      "reasoning": "Toy problems are simplified versions of real-world challenges used for research."
+    },
+    {
+      "type": "simple",
+      "text": "The 'Transition Model' in a search problem defines:",
+      "options": [
+        "The final goal",
+        "The result of each action (Result(s, a))",
+        "The cost of energy",
+        "The shape of the state"
+      ],
+      "correct_option": 1,
+      "hint": "What happens after an action.",
+      "reasoning": "The transition model describes what each action does to the environment's state."
+    },
+    {
+      "type": "simple",
+      "text": "A Chess board with a 5-minute timer is an example of what kind of environment?",
+      "options": ["Static", "Semidynamic", "Dynamic", "Sequential"],
+      "correct_option": 1,
+      "hint": "Environment doesn't change, but score does with time.",
+      "reasoning": "Semidynamic means the world doesn't change, but the agent's performance score decreases with time."
+    },
+    {
+      "type": "simple",
+      "text": "Which agent type uses a 'Utility Function' to choose between multiple paths to a goal?",
+      "options": ["Reflex Agent", "Goal-based Agent", "Utility-based Agent", "Model-based Agent"],
+      "correct_option": 2,
+      "hint": "It measures 'happiness' or efficiency.",
+      "reasoning": "Utility-based agents use a measure of 'how good' a state is to make decisions."
+    },
+    {
+      "type": "medium",
+      "text": "Why is a 'Model-based' reflex agent better than a 'Simple' reflex agent for a driving task?",
+      "options": [
+        "It uses more sensors",
+        "It maintains an internal state to remember objects in blind spots",
+        "It is programmed to go faster",
+        "It costs less to build"
+      ],
+      "correct_option": 1,
+      "hint": "Think about hidden information.",
+      "reasoning": "In partially observable environments, the agent needs 'memory' (a model) to track things it cannot currently see."
+    },
+    {
+      "type": "medium",
+      "text": "What is a 'Belief State' in the context of problem types?",
+      "options": [
+        "What the user believes about the AI",
+        "The set of all possible physical states the agent might be in",
+        "The final goal of a stochastic agent",
+        "A state with no possible actions"
+      ],
+      "correct_option": 1,
+      "hint": "Used in sensorless (conformant) problems.",
+      "reasoning": "In sensorless problems, the agent deals with sets of states (Belief States) it believes are possible."
+    },
+    {
+      "type": "medium",
+      "text": "In the task environment classification, 'Strategic' is a sub-type of:",
+      "options": ["Stochastic", "Deterministic", "Sequential", "Continuous"],
+      "correct_option": 1,
+      "hint": "Next state is certain EXCEPT for other agents.",
+      "reasoning": "Deterministic environments are called 'Strategic' if the only uncertainty is caused by other agents."
+    },
+    {
+      "type": "medium",
+      "text": "What is the 'MRV Heuristic' in Constraint Satisfaction Problems?",
+      "options": [
+        "Most Relevant Variable",
+        "Minimum Remaining Values (choosing the most constrained variable)",
+        "Maximum Result Value",
+        "Minimum Reasoning Variable"
+      ],
+      "correct_option": 1,
+      "hint": "Pickup the variable with the fewest options.",
+      "reasoning": "MRV picks the variable that has the fewest legal values left, reducing the branching factor."
+    },
+    {
+      "type": "medium",
+      "text": "In Alpha-Beta pruning, what does the 'Beta' value represent?",
+      "options": [
+        "The best choice for MAX found so far",
+        "The best (lowest) choice for MIN found so far",
+        "The number of pruned nodes",
+        "The depth of the search tree"
+      ],
+      "correct_option": 1,
+      "hint": "The opponent's threshold.",
+      "reasoning": "Beta ($\\beta$) is the lowest-value choice found so far for the MIN player along the path."
+    },
+    {
+      "type": "medium",
+      "text": "Which problem type requires a 'Strategy' or 'Policy' (tree of actions) rather than a simple sequence?",
+      "options": ["Single-state", "Conformant", "Contingency", "Known"],
+      "correct_option": 2,
+      "hint": "Think about if actions have unknown results.",
+      "reasoning": "Contingency problems (nondeterministic/partially observable) require decisions to be interleaved with percepts."
+    },
+    {
+      "type": "medium",
+      "text": "In game playing, what is an 'Evaluation Function' ($Eval$)?",
+      "options": [
+        "A test to check if the game is over",
+        "A heuristic to estimate the utility of a non-terminal state",
+        "A way to calculate the move speed",
+        "The final score of the winner"
+      ],
+      "correct_option": 1,
+      "hint": "Used for real-time games with cutoffs.",
+      "reasoning": "Evaluation functions estimate how 'good' a board looks (e.g., material value) when search cannot reach the end."
+    },
+    {
+      "type": "medium",
+      "text": "What determines if an agent is 'Autonomous'?",
+      "options": [
+        "It doesn't need electricity",
+        "Its behavior is determined by its own experience rather than just built-in knowledge",
+        "It has a robot body",
+        "It can speak human language"
+      ],
+      "correct_option": 1,
+      "hint": "Learning from current environment vs. hard-coding.",
+      "reasoning": "An agent is autonomous to the extent that its behavior depends on its own percepts and learning."
+    },
+    {
+      "type": "medium",
+      "text": "In a CSP, which constraint relates three or more variables (e.g. Alldifferent)?",
+      "options": ["Unary Constraint", "Binary Constraint", "Global Constraint", "Local Constraint"],
+      "correct_option": 2,
+      "hint": "Sudoku is full of these.",
+      "reasoning": "Global constraints involve more than two variables."
+    },
+    {
+      "type": "medium",
+      "text": "Which environment property is 'Episodic'?",
+      "options": [
+        "The current decision affects the future",
+        "The experience is divided into independent atomic episodes",
+        "The world is divided into grid cells",
+        "The agent has an infinite lifespan"
+      ],
+      "correct_option": 1,
+      "hint": "Image classification vs. Chess.",
+      "reasoning": "In episodic environments, the choice of action in one episode doesn't affect subsequent ones."
+    },
+    {
+      "type": "hard",
+      "text": "Under what condition is an Alpha-Beta search branch pruned?",
+      "options": ["$\\alpha < \\beta$", "$\\alpha \\ge \\beta$", "$\\alpha = 0$", "$\\beta = \\infty$"],
+      "correct_option": 1,
+      "hint": "When MAX's best is already better than what MIN would allow.",
+      "reasoning": "Pruning occurs if $\\alpha \\ge \\beta$ because a rational player would never enter a branch that is worse than an already found alternative."
+    },
+    {
+      "type": "hard",
+      "text": "Which 'Problem Type' involves an unknown state space where the agent must map the environment while acting?",
+      "options": ["Multiple-state", "Contingency", "Exploration", "Single-state"],
+      "correct_option": 2,
+      "hint": "Think of a robot on Mars with no map.",
+      "reasoning": "Exploration problems occur when the agent doesn't have a transition model and must learn it through action."
+    },
+    {
+      "type": "hard",
+      "text": "Why is the 'Degree Heuristic' typically used as a tie-breaker for MRV in CSPs?",
+      "options": [
+        "It is faster to calculate",
+        "It selects the variable that imposes the most constraints on unassigned variables",
+        "It makes the solution look better",
+        "It doesn't require memory"
+      ],
+      "correct_option": 1,
+      "hint": "Aiming to fail early.",
+      "reasoning": "The Degree Heuristic aims to reduce the branching factor on future steps by constraining as many variables as possible."
+    },
+    {
+      "type": "hard",
+      "text": "What does 'Abstraction' in problem formulation specifically mean?",
+      "options": [
+        "Making the problem more complex",
+        "Removing irrelevant details from the real world to create a valid mathematical model",
+        "Using colors instead of numbers",
+        "Programming in a high-level language"
+      ],
+      "correct_option": 1,
+      "hint": "Creating the State Space.",
+      "reasoning": "Abstraction removes features like 'tile color' or 'ambient noise' to focus solely on variables that affect the goal."
+    },
+    {
+      "type": "hard",
+      "text": "In a 'Structured' state representation, how is a state described?",
+      "options": [
+        "As a single black-box node",
+        "As a set of independent variables (Factored)",
+        "Via objects and their relationships (e.g. 'Inside', 'Connected')",
+        "As a string of binary digits"
+      ],
+      "correct_option": 2,
+      "hint": "The most complex level of representation.",
+      "reasoning": "Structured representations express states in terms of objects and relations between them."
+    },
+    {
+      "type": "hard",
+      "text": "How does a 'Conformant' problem differ from a 'Single-state' problem?",
+      "options": [
+        "It uses sensors",
+        "It must find a solution that works for EVERY possible initial state (due to being sensorless)",
+        "It is only for games",
+        "It has no path cost"
+      ],
+      "correct_option": 1,
+      "hint": "A blind agent must be absolutely sure.",
+      "reasoning": "Conformant problems require a plan that 'coerces' the environment into the goal state regardless of where it started."
+    },
+    {
+      "type": "hard",
+      "text": "In the context of learning agents, what is 'Exploration' vs 'Exploitation'?",
+      "options": [
+        "There is no difference",
+        "Exploration is finding new actions; Exploitation is using known best actions",
+        "Exploration is for games; Exploitation is for driving",
+        "Exploitation is a type of sensor error"
+      ],
+      "correct_option": 1,
+      "hint": "Search for more info vs. using current info.",
+      "reasoning": "Learning agents must balance gaining more knowledge (Exploration) with achieving the highest score (Exploitation)."
+    },
+    {
+      "type": "hard",
+      "text": "What is the mathematical condition for a 'Zero-Sum' game?",
+      "options": [
+        "The winner gets 0 points",
+        "The total utility for all players adds up to zero in every state",
+        "There are no points in the game",
+        "The game never ends"
+      ],
+      "correct_option": 1,
+      "hint": "My gain is exactly your loss.",
+      "reasoning": "Zero-sum means the sum of values for all players is constant (usually 0). $+1$ for me means $-1$ for you."
+    },
+    {
+      "type": "hard",
+      "text": "An environment is 'Sequential' if:",
+      "options": [
+        "Actions are independent",
+        "The current decision can affect all future decisions",
+        "The agent moves in a straight line",
+        "The state space is a list"
+      ],
+      "correct_option": 1,
+      "hint": "Short-term vs Long-term consequence.",
+      "reasoning": "In sequential environments (like driving or chess), individual choices have long-term effects on the future."
+    },
+    {
+      "type": "hard",
+      "text": "The 'Least Constraining Value' (LCV) heuristic in CSPs is used to:",
+      "options": [
+        "Fail as fast as possible",
+        "Choose a value that rules out the fewest choices for neighboring variables",
+        "Make the program run slower",
+        "Assign the same value to all variables"
+      ],
+      "correct_option": 1,
+      "hint": "Leaving options open for the future.",
+      "reasoning": "LCV aims to find a solution faster by picking values that are most likely to work with the remaining variables."
+    }
+  ]
+}
