@@ -231,7 +231,7 @@ for i in range(1, 6):
       <a href="/syllabus/bt101co/decision-making/">← Previous: 4.1 Decision Making</a>
     </div>
     <div class="next-topic">
-       <a href="/syllabus/bt101co/">Next: Unit 5 Functions →</a>
+       <a href="/syllabus/bt101co/extra-control/">Next: 4.3 Control Statements →</a>
     </div>
   </div>
   <div style="text-align: center; margin-top: 30px;">

@@ -64,7 +64,7 @@ print(result) # Output: 30</code></pre>
       <a href="/syllabus/bt101co/loop-control/">← Previous: 4.2 Loop Control</a>
     </div>
     <div class="next-topic">
-       <a href="/syllabus/bt101co/">Next: Back to Syllabus →</a>
+       <a href="/syllabus/bt101co/functions-basics/">Next: 5.1 Syntax and basics of a function →</a>
     </div>
   </div>
   <div style="text-align: center; margin-top: 30px;">

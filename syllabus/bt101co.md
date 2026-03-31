@@ -66,16 +66,16 @@ nav_exclude: true
   <div class="unit">
     <h3>Unit 5: Functions and Lists <span class="unit-hours">[9 Hrs]</span></h3>
     <ul>
-      <li>5.1 Syntax and basics of a function</li>
-      <li>5.2 Use of a function</li>
-      <li>5.3 Parameters and Arguments in a function</li>
-      <li>5.4 Local and global scope of a variable</li>
-      <li>5.5 Recursive functions</li>
-      <li>5.6 The lambda function</li>
-      <li>5.7 Creating Lists</li>
-      <li>5.8 Accessing the elements of a List</li>
-      <li>5.9 List Slicing</li>
-      <li>5.10 Python in-built functions for Lists</li>
+      <li><a href="/syllabus/bt101co/functions-basics/">5.1 Syntax and basics of a function</a></li>
+      <li><a href="/syllabus/bt101co/use-of-functions/">5.2 Use of a function</a></li>
+      <li><a href="/syllabus/bt101co/parameters-arguments/">5.3 Parameters and Arguments in a function</a></li>
+      <li><a href="/syllabus/bt101co/variable-scope/">5.4 Local and global scope of a variable</a></li>
+      <li><a href="/syllabus/bt101co/recursive-functions/">5.5 Recursive functions</a></li>
+      <li><a href="/syllabus/bt101co/lambda-functions/">5.6 The lambda function</a></li>
+      <li><a href="/syllabus/bt101co/creating-lists/">5.7 Creating Lists</a></li>
+      <li><a href="/syllabus/bt101co/accessing-lists/">5.8 Accessing the elements of a List</a></li>
+      <li><a href="/syllabus/bt101co/list-slicing/">5.9 List Slicing</a></li>
+      <li><a href="/syllabus/bt101co/list-functions/">5.10 Python in-built functions for Lists</a></li>
     </ul>
   </div>
 
