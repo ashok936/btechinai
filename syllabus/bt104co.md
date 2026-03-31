@@ -34,8 +34,8 @@ nav_exclude: true
     <h3>Unit 2: Agents and Problem Solving <span class="unit-hours">[11 Hrs]</span></h3>
     <ul>
       <li><a href="/syllabus/bt104co/agent-environment/">2.1 Introduction to agent and agent environment</a></li>
-      <li><a href="/syllabus/bt104co/agent-architecture/">2.2 Agent architecture</a></li>
-      <li><a href="/syllabus/bt104co/agent-types/">2.3 Types and Examples of Agent</a></li>
+      <li><a href="/syllabus/bt104co/agent-architecture/">2.2 Agent Architecture and Types</a></li>
+      <li><a href="/syllabus/bt104co/task-environment/">2.3 The Properties of Task Environments</a></li>
       <li><a href="/syllabus/bt104co/peas/">2.4 PEAS</a></li>
       <li><a href="/syllabus/bt104co/state-space-search/">2.5 Defining Problem as a State Space Search</a></li>
       <li><a href="/syllabus/bt104co/problem-types/">2.6 Problem types</a></li>
